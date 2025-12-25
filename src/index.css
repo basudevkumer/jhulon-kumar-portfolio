@@ -1,0 +1,457 @@
+@import "tailwindcss";
+
+:root {
+  /* Main color: Appearance / Slate (core brand color) */
+  --slate-50: #f8fafc;
+  --slate-100: #f1f5f9;
+  --slate-200: #e2e8f0;
+  --slate-300: #cad5e2;
+  --slate-400: #90a1b9;
+  --slate-500: #62748e;
+  --slate-600: #45556c;
+  --slate-700: #314158;
+  --slate-800: #1d293d;
+  --slate-900: #1d293d;
+  --slate-950: #020618;
+
+  /* Primary: Orange */
+  --orange-50: #fff7ed;
+  --orange-100: #ffedd4;
+  --orange-200: #ffd6a7;
+  --orange-300: #ffb86a;
+  --orange-400: #ff8904;
+  --orange-500: #ff6900;
+  --orange-600: #f54900;
+  --orange-700: #ca3500;
+  --orange-800: #9f2d00;
+  --orange-900: #7e2a0c;
+  --orange-950: #441306;
+
+  /* Secondary: Teal */
+  --teal-50: #f0fdfa;
+  --teal-100: #cbfbf1;
+  --teal-200: #96f7e4;
+  --teal-300: #46ecd5;
+  --teal-400: #00d5be;
+  --teal-500: #00bba7;
+  --teal-600: #009689;
+  --teal-700: #00786f;
+  --teal-800: #005f5a;
+  --teal-900: #0b4f4a;
+  --teal-950: #022f2e;
+
+  /* Secondary: Indigo */
+  --indigo-50: #eef2ff;
+  --indigo-100: #e0e7ff;
+  --indigo-200: #c6d2ff;
+  --indigo-300: #a3b3ff;
+  --indigo-400: #7c86ff;
+  --indigo-500: #615fff;
+  --indigo-600: #4f39f6;
+  --indigo-700: #432dd7;
+  --indigo-800: #372aac;
+  --indigo-900: #312c85;
+  --indigo-950: #1e1a4d;
+
+  /* Accent: Purple */
+  --purple-50: #faf5ff;
+  --purple-100: #f3e8ff;
+  --purple-200: #e9d4ff;
+  --purple-300: #dab2ff;
+  --purple-400: #c27aff;
+  --purple-500: #ad46ff;
+  --purple-600: #9810fa;
+  --purple-700: #8200db;
+  --purple-800: #6e11b0;
+  --purple-900: #59168b;
+  --purple-950: #3c0366;
+
+  /* Secondary: Rose */
+  --rose-50: #fff1f2;
+  --rose-100: #ffe4e6;
+  --rose-200: #ffccd2;
+  --rose-300: #ffa1ad;
+  --rose-400: #ff637e;
+  --rose-500: #ff2056;
+  --rose-600: #ec003f;
+  --rose-700: #c60036;
+  --rose-800: #a50036;
+  --rose-900: #8b0836;
+  --rose-950: #4d0218;
+
+  /* Neutral colors: Gray (foundation for backgrounds, borders, and typography) */
+
+  /* ===================================================== */
+  /* GRAY COLORS */
+  /* ===================================================== */
+
+  /* Original Solid Shades */
+  --gray-50: #ffffff; /* original */
+  --gray-100: #f5f5f5; /* original */
+  --gray-200: #e5e5e5; /* original */
+  --gray-300: #d1d5dc; /* original */
+  --gray-400: #d4d4d4; /* original */
+  --gray-500: #a1a1a1; /* original */
+  --gray-600: #737373; /* original */
+  --gray-700: #525252; /* original */
+  --gray-800: #404040; /* original */
+  --gray-900: #171717; /* original */
+  --gray-950: #0a0a0a; /* original */
+
+  /* Opacity Versions (2% → 40%) */
+  --gray-50-o2: rgba(255, 255, 255, 0.02);
+  --gray-50-o4: rgba(255, 255, 255, 0.04);
+  --gray-50-o6: rgba(255, 255, 255, 0.06);
+  --gray-50-o8: rgba(255, 255, 255, 0.08);
+  --gray-50-o12: rgba(255, 255, 255, 0.12);
+  --gray-50-o14: rgba(255, 255, 255, 0.14);
+  --gray-50-o16: rgba(255, 255, 255, 0.16);
+  --gray-50-o20: rgba(255, 255, 255, 0.2);
+  --gray-50-o24: rgba(255, 255, 255, 0.24);
+  --gray-50-o32: rgba(255, 255, 255, 0.32);
+  --gray-50-o40: rgba(255, 255, 255, 0.4);
+
+  /* ===================================================== */
+  /* RED COLORS */
+  /* ===================================================== */
+
+  /* Original Solid Shades */
+  --red-50: #fef2f2; /* original */
+  --red-100: #ffe2e2; /* original */
+  --red-200: #ffc9c9; /* original */
+  --red-300: #ffa2a2; /* original */
+  --red-400: #ff6467; /* original */
+  --red-500: #fb2c36; /* original */
+  --red-600: #e7000b; /* original */
+  --red-700: #c10007; /* original */
+  --red-800: #9f0712; /* original */
+  --red-900: #82181a; /* original */
+  --red-950: #460809; /* original */
+
+  /* Opacity Versions (2% → 40%) */
+  --red-500-o2: rgba(251, 44, 54, 0.02);
+  --red-500-o4: rgba(251, 44, 54, 0.04);
+  --red-500-o6: rgba(251, 44, 54, 0.06);
+  --red-500-o8: rgba(251, 44, 54, 0.08);
+  --red-500-o12: rgba(251, 44, 54, 0.12);
+  --red-500-o14: rgba(251, 44, 54, 0.14);
+  --red-500-o16: rgba(251, 44, 54, 0.16);
+  --red-500-o20: rgba(251, 44, 54, 0.2);
+  --red-500-o24: rgba(251, 44, 54, 0.24);
+  --red-500-o32: rgba(251, 44, 54, 0.32);
+  --red-500-o40: rgba(251, 44, 54, 0.4);
+
+  /* ===================================================== */
+  /* GREEN COLORS */
+  /* ===================================================== */
+
+  /* Original Solid Shades */
+  --green-50: #f0fdf4; /* original */
+  --green-100: #dcfce7; /* original */
+  --green-200: #b9f8cf; /* original */
+  --green-300: #7bf1a7; /* original */
+  --green-400: #05df72; /* original */
+  --green-500: #00c950; /* original */
+  --green-600: #00a63e; /* original */
+  --green-700: #008235; /* original */
+  --green-800: #016630; /* original */
+  --green-900: #0d542b; /* original */
+  --green-950: #032e15; /* original */
+
+  /* Opacity Versions (2% → 40%) */
+  --green-500-o2: rgba(0, 201, 80, 0.02);
+  --green-500-o4: rgba(0, 201, 80, 0.04);
+  --green-500-o6: rgba(0, 201, 80, 0.06);
+  --green-500-o8: rgba(0, 201, 80, 0.08);
+  --green-500-o12: rgba(0, 201, 80, 0.12);
+  --green-500-o14: rgba(0, 201, 80, 0.14);
+  --green-500-o16: rgba(0, 201, 80, 0.16);
+  --green-500-o20: rgba(0, 201, 80, 0.2);
+  --green-500-o24: rgba(0, 201, 80, 0.24);
+  --green-500-o32: rgba(0, 201, 80, 0.32);
+  --green-500-o40: rgba(0, 201, 80, 0.4);
+
+  /* ===================================================== */
+  /* YELLOW COLORS */
+  /* ===================================================== */
+
+  /* Original Solid Shades */
+  --yellow-50: #fefce8; /* original */
+  --yellow-100: #fef9c2; /* original */
+  --yellow-200: #fff085; /* original */
+  --yellow-300: #ffdf20; /* original */
+  --yellow-400: #fdc700; /* original */
+  --yellow-500: #f0b100; /* original */
+  --yellow-600: #d08700; /* original */
+  --yellow-700: #a65f00; /* original */
+  --yellow-800: #894b00; /* original */
+  --yellow-900: #733e0a; /* original */
+  --yellow-950: #432004; /* original */
+
+  /* Opacity Versions (2% → 40%) */
+  --yellow-500-o2: rgba(240, 177, 0, 0.02);
+  --yellow-500-o4: rgba(240, 177, 0, 0.04);
+  --yellow-500-o6: rgba(240, 177, 0, 0.06);
+  --yellow-500-o8: rgba(240, 177, 0, 0.08);
+  --yellow-500-o12: rgba(240, 177, 0, 0.12);
+  --yellow-500-o14: rgba(240, 177, 0, 0.14);
+  --yellow-500-o16: rgba(240, 177, 0, 0.16);
+  --yellow-500-o20: rgba(240, 177, 0, 0.2);
+  --yellow-500-o24: rgba(240, 177, 0, 0.24);
+  --yellow-500-o32: rgba(240, 177, 0, 0.32);
+  --yellow-500-o40: rgba(240, 177, 0, 0.4);
+
+  /* for font family */
+  --font-fira: "Fira Code", monospace;
+  --font-inter: "Inter", sans-serif;
+}
+
+/* @theme color code here  */
+
+@theme {
+  /* Slate Colors */
+  --color-slate_50: var(--slate-50);
+  --color-slate_100: var(--slate-100);
+  --color-slate_200: var(--slate-200);
+  --color-slate_300: var(--slate-300);
+  --color-slate_400: var(--slate-400);
+  --color-slate_500: var(--slate-500);
+  --color-slate_600: var(--slate-600);
+  --color-slate_700: var(--slate-700);
+  --color-slate_800: var(--slate-800);
+  --color-slate_900: var(--slate-900);
+  --color-slate_950: var(--slate-950);
+
+  /* Orange Colors */
+  --color-orange_50: var(--orange-50);
+  --color-orange_100: var(--orange-100);
+  --color-orange_200: var(--orange-200);
+  --color-orange_300: var(--orange-300);
+  --color-orange_400: var(--orange-400);
+  --color-orange_500: var(--orange-500);
+  --color-orange_600: var(--orange-600);
+  --color-orange_700: var(--orange-700);
+  --color-orange_800: var(--orange-800);
+  --color-orange_900: var(--orange-900);
+  --color-orange_950: var(--orange-950);
+
+  /* Teal Colors */
+  --color-teal_50: var(--teal-50);
+  --color-teal_100: var(--teal-100);
+  --color-teal_200: var(--teal-200);
+  --color-teal_300: var(--teal-300);
+  --color-teal_400: var(--teal-400);
+  --color-teal_500: var(--teal-500);
+  --color-teal_600: var(--teal-600);
+  --color-teal_700: var(--teal-700);
+  --color-teal_800: var(--teal-800);
+  --color-teal_900: var(--teal-900);
+  --color-teal_950: var(--teal-950);
+
+  /* Indigo Colors */
+  --color-indigo_50: var(--indigo-50);
+  --color-indigo_100: var(--indigo-100);
+  --color-indigo_200: var(--indigo-200);
+  --color-indigo_300: var(--indigo-300);
+  --color-indigo_400: var(--indigo-400);
+  --color-indigo_500: var(--indigo-500);
+  --color-indigo_600: var(--indigo-600);
+  --color-indigo_700: var(--indigo-700);
+  --color-indigo_800: var(--indigo-800);
+  --color-indigo_900: var(--indigo-900);
+  --color-indigo_950: var(--indigo-950);
+
+  /* Purple Colors */
+  --color-purple_50: var(--purple-50);
+  --color-purple_100: var(--purple-100);
+  --color-purple_200: var(--purple-200);
+  --color-purple_300: var(--purple-300);
+  --color-purple_400: var(--purple-400);
+  --color-purple_500: var(--purple-500);
+  --color-purple_600: var(--purple-600);
+  --color-purple_700: var(--purple-700);
+  --color-purple_800: var(--purple-800);
+  --color-purple_900: var(--purple-900);
+  --color-purple_950: var(--purple-950);
+
+  /* Rose Colors */
+  --color-rose_50: var(--rose-50);
+  --color-rose_100: var(--rose-100);
+  --color-rose_200: var(--rose-200);
+  --color-rose_300: var(--rose-300);
+  --color-rose_400: var(--rose-400);
+  --color-rose_500: var(--rose-500);
+  --color-rose_600: var(--rose-600);
+  --color-rose_700: var(--rose-700);
+  --color-rose_800: var(--rose-800);
+  --color-rose_900: var(--rose-900);
+  --color-rose_950: var(--rose-950);
+
+  /* Gray Colors */
+  --color-gray_50: var(--gray-50);
+  --color-gray_100: var(--gray-100);
+  --color-gray_200: var(--gray-200);
+  --color-gray_300: var(--gray-300);
+  --color-gray_400: var(--gray-400);
+  --color-gray_500: var(--gray-500);
+  --color-gray_600: var(--gray-600);
+  --color-gray_700: var(--gray-700);
+  --color-gray_800: var(--gray-800);
+  --color-gray_900: var(--gray-900);
+  --color-gray_950: var(--gray-950);
+
+  /* Gray Opacity Versions */
+  --color-gray_50_o2: var(--gray-50-o2);
+  --color-gray_50_o4: var(--gray-50-o4);
+  --color-gray_50_o6: var(--gray-50-o6);
+  --color-gray_50_o8: var(--gray-50-o8);
+  --color-gray_50_o12: var(--gray-50-o12);
+  --color-gray_50_o14: var(--gray-50-o14);
+  --color-gray_50_o16: var(--gray-50-o16);
+  --color-gray_50_o20: var(--gray-50-o20);
+  --color-gray_50_o24: var(--gray-50-o24);
+  --color-gray_50_o32: var(--gray-50-o32);
+  --color-gray_50_o40: var(--gray-50-o40);
+
+  /* Red Colors */
+  --color-red_50: var(--red-50);
+  --color-red_100: var(--red-100);
+  --color-red_200: var(--red-200);
+  --color-red_300: var(--red-300);
+  --color-red_400: var(--red-400);
+  --color-red_500: var(--red-500);
+  --color-red_600: var(--red-600);
+  --color-red_700: var(--red-700);
+  --color-red_800: var(--red-800);
+  --color-red_900: var(--red-900);
+  --color-red_950: var(--red-950);
+
+  /* Red Opacity Versions */
+  --color-red_500_o2: var(--red-500-o2);
+  --color-red_500_o4: var(--red-500-o4);
+  --color-red_500_o6: var(--red-500-o6);
+  --color-red_500_o8: var(--red-500-o8);
+  --color-red_500_o12: var(--red-500-o12);
+  --color-red_500_o14: var(--red-500-o14);
+  --color-red_500_o16: var(--red-500-o16);
+  --color-red_500_o20: var(--red-500-o20);
+  --color-red_500_o24: var(--red-500-o24);
+  --color-red_500_o32: var(--red-500-o32);
+  --color-red_500_o40: var(--red-500-o40);
+
+  /* Green Colors */
+  --color-green_50: var(--green-50);
+  --color-green_100: var(--green-100);
+  --color-green_200: var(--green-200);
+  --color-green_300: var(--green-300);
+  --color-green_400: var(--green-400);
+  --color-green_500: var(--green-500);
+  --color-green_600: var(--green-600);
+  --color-green_700: var(--green-700);
+  --color-green_800: var(--green-800);
+  --color-green_900: var(--green-900);
+  --color-green_950: var(--green-950);
+
+  /* Green Opacity Versions */
+  --color-green_500_o2: var(--green-500-o2);
+  --color-green_500_o4: var(--green-500-o4);
+  --color-green_500_o6: var(--green-500-o6);
+  --color-green_500_o8: var(--green-500-o8);
+  --color-green_500_o12: var(--green-500-o12);
+  --color-green_500_o14: var(--green-500-o14);
+  --color-green_500_o16: var(--green-500-o16);
+  --color-green_500_o20: var(--green-500-o20);
+  --color-green_500_o24: var(--green-500-o24);
+  --color-green_500_o32: var(--green-500-o32);
+  --color-green_500_o40: var(--green-500-o40);
+
+  /* Yellow Colors */
+  --color-yellow_50: var(--yellow-50);
+  --color-yellow_100: var(--yellow-100);
+  --color-yellow_200: var(--yellow-200);
+  --color-yellow_300: var(--yellow-300);
+  --color-yellow_400: var(--yellow-400);
+  --color-yellow_500: var(--yellow-500);
+  --color-yellow_600: var(--yellow-600);
+  --color-yellow_700: var(--yellow-700);
+  --color-yellow_800: var(--yellow-800);
+  --color-yellow_900: var(--yellow-900);
+  --color-yellow_950: var(--yellow-950);
+
+  /* Yellow Opacity Versions */
+  --color-yellow_500_o2: var(--yellow-500-o2);
+  --color-yellow_500_o4: var(--yellow-500-o4);
+  --color-yellow_500_o6: var(--yellow-500-o6);
+  --color-yellow_500_o8: var(--yellow-500-o8);
+  --color-yellow_500_o12: var(--yellow-500-o12);
+  --color-yellow_500_o14: var(--yellow-500-o14);
+  --color-yellow_500_o16: var(--yellow-500-o16);
+  --color-yellow_500_o20: var(--yellow-500-o20);
+  --color-yellow_500_o24: var(--yellow-500-o24);
+  --color-yellow_500_o32: var(--yellow-500-o32);
+  --color-yellow_500_o40: var(--yellow-500-o40);
+}
+
+/*for font famlily*/
+
+@theme {
+  --font-fira_code: var(--font-fira);
+  --font-inter_font: var(--font-inter);
+}
+
+/* body  styling*/
+
+/* for  thin  body*/
+.body_thin_sm {
+  @apply font-fira_code text-sm/[140%] font-extralight;
+}
+.body_thin_md {
+  @apply font-fira_code text-base/[150%] font-extralight;
+}
+.body_thin_lg {
+  @apply font-fira_code text-lg/[150%] font-extralight;
+}
+
+/* for  bold  body*/
+
+.body_bold_sm {
+  @apply font-fira_code text-sm/[140%] font-bold;
+}
+.body_bold_md {
+  @apply font-fira_code text-base/[150%] font-bold;
+}
+.body_bold_lg {
+  @apply font-fira_code text-lg/[150%] font-bold;
+}
+
+/* for  link  body*/
+
+.body_link_sm {
+  @apply font-inter_font text-sm/[140%] font-extralight;
+}
+.body_link_md {
+  @apply font-inter_font text-base/[150%] font-extralight;
+}
+.body_link_lg {
+  @apply font-inter_font text-lg/[150%] font-extralight;
+}
+
+/* for heading*/
+.heading1 {
+  @apply font-fira_code text-6xl/[110%] font-extralight;
+}
+.heading2 {
+  @apply font-fira_code text-5xl/[120%] font-extralight;
+}
+.heading3 {
+  @apply font-fira_code text-4xl/[130%] font-extralight;
+}
+.heading4 {
+  @apply font-fira_code text-3xl/[140%] font-extralight;
+}
+.heading5 {
+  @apply font-fira_code text-2xl/[140%] font-extralight;
+}
+.heading6 {
+  @apply font-fira_code text-xl/[150%] font-extralight;
+}
