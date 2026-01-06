@@ -6,7 +6,7 @@ const navbarArray = [
   {
     id: 1,
     name: "jhulon-kumar",
-    className: "border-r col-span-2",
+    className: "border-r ",
     status: true,
     responsive: false,
   },
@@ -25,13 +25,14 @@ const navbarArray = [
     status: false,
     responsive: true,
   },
-  { id: 5, name: "", className: "col-span-4", status: true, responsive: false },
+
   {
-    id: 6,
+    id: 5,
     name: "_contact-me",
     className: "border-l",
     status: false,
     responsive: true,
+    isLast:true
   },
 ];
 

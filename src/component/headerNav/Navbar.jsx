@@ -21,8 +21,8 @@ const Navbar = () => {
   return (
     <section className="md:pt-4 sm:pt-4 ">
       <Container>
-        <header className=" ">
-          <div className=" flex justify-between items-center  lg:hidden  bg-slate_900 border-t-2 border-l-2 border-r-2 border-slate_700  rounded-t-[8px]   ">
+        <header className="  ">
+          <div className=" flex justify-between items-center  lg:hidden  bg-slate_900 border-t-2 border-l-2 border-r-2 border-slate_700  rounded-t-[8px]">
             <div className="body_thin_md text-slate_400 px-6 py-4  ">
               Jhulon Kumar
             </div>
@@ -42,12 +42,14 @@ const Navbar = () => {
             </button>
           </div>
 
-          <nav className="hidden lg:block">
-            <ul className="grid  grid-cols-10 text-center border-t-2 border-l-2 border-r-2 border-slate_700 rounded-t-[8px] overflow-hidden bg-slate_900   ">
+          <nav className="hidden lg:block border-slate_700 rounded-t-[8px] overflow-hidden bg-slate_900  border-t-2 border-l-2 border-r-2 lg:flex justify-between ">
+            <ul className="flex text-center  ">
               {navbarArray.map((item) => {
                 const isActive = activeId === item.id;
 
-                return (
+                return item.isLast ? (
+                  null
+                ) : (
                   <li
                     key={item.id}
                     className={`
@@ -73,10 +75,49 @@ const Navbar = () => {
                     `}
                     onClick={() => !item.status && setActiveId(item.id)}
                   >
-                    <span className="body_thin_md text-slate_400 px-3 py-4 inline-block whitespace-nowrap">
+                    <span className="body_thin_md text-slate_400 px-8 py-4 inline-block whitespace-nowrap">
                       {item.name}
                     </span>
                   </li>
+                );
+              })}
+            </ul>
+            <ul className="flex text-center  ">
+              {navbarArray.map((item) => {
+                const isActive = activeId === item.id;
+
+                return item.isLast ? (
+                  <li
+                    key={item.id}
+                    className={`
+                        ${item.className}
+                        border-slate_700
+                        relative
+                        ${!item.status ? "cursor-pointer" : ""}
+                        after:content-[""]
+                        after:absolute
+                        after:left-0
+                        after:bottom-0
+                        after:h-[2.5px]
+                        after:w-full
+                        after:bg-orange_300
+                        after:origin-left
+                        after:transition-transform
+                        after:duration-300
+                        ${
+                          isActive && !item.status
+                            ? "after:scale-x-100"
+                            : "after:scale-x-0"
+                        }
+                      `}
+                    onClick={() => !item.status && setActiveId(item.id)}
+                  >
+                    <span className="body_thin_md text-slate_400 px-8 py-4 inline-block whitespace-nowrap">
+                      {item.name}
+                    </span>
+                  </li>
+                ) : (
+                  null
                 );
               })}
             </ul>

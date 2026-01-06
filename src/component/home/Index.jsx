@@ -10,9 +10,9 @@ const Hello = () => {
   } = allImages;
 
   return (
-    <section className="overflow-hidden">
+    <section className="">
       <Container>
-        <div className="border border-slate_700 bg-slate_900 sm:py-[150px] md:py-[150px] lg:py-[40px]  lg:grid lg:grid-cols-2 items-center gap-x-10   ">
+        <div className=" overflow-hidden border border-slate_700 bg-slate_900 sm:py-[150px] md:py-[150px] lg:py-[40px]  lg:grid lg:grid-cols-2 items-center gap-x-10   ">
           <div className="  ml-[75px]">
             <div className="pb-[75px] ">
               <h6 className="body_thin_lg text-slate_400">Hi all. I am</h6>
