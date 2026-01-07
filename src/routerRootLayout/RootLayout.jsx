@@ -5,10 +5,10 @@ import { Outlet } from "react-router-dom";
 
 const RootLayout = () => {
   return (
-    <div className="bg-slate_950 min-h-screen flex flex-col justify-center   ">
+    <div className="bg-slate_950 min-h-screen flex flex-col   px-8 justify-center">
       <Navbar />
-      <main className="">
-        <Outlet />
+      <main className=" ">
+        <Outlet  />
       </main>
       <Footer />
     </div>

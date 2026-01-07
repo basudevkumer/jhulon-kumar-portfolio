@@ -5,15 +5,14 @@ import allImages from "@/helper/ImageProvider";
 const Hello = () => {
   const {
     hello_pages_Image,
-    hello_pages_Bg_overlay1,
-    hello_pages_Bg_overlay2,
+  
   } = allImages;
 
   return (
-    <section className="">
+    <section className="  border border-slate_700   bg-slate_900   ">
       <Container>
-        <div className=" overflow-hidden border border-slate_700 bg-slate_900 sm:py-[150px] md:py-[150px] lg:py-[40px]  lg:grid lg:grid-cols-2 items-center gap-x-10   ">
-          <div className="  ml-[75px]">
+        <div className="sm:py-[150px] md:py-[150px] lg:py-[40px]  lg:grid lg:grid-cols-2 items-center w-full  gap-x-[146px]   min-h-[calc(100vh-190px)] ">
+          <div className="md:pl-[100px] sm:pl-[40px]">
             <div className="pb-[75px] ">
               <h6 className="body_thin_lg text-slate_400">Hi all. I am</h6>
               <h1 className="heading1 text-slate_50 pt-4 pb-2">Jhulon Kumar</h1>
@@ -46,7 +45,7 @@ const Hello = () => {
               </div>
             </div>
           </div>
-          <div className="pl-4 relative  ">
+          <div className=" relative  ">
             <figure className="relative sm:hidden md:hidden lg:block">
               <img
                 src={hello_pages_Image}
@@ -54,18 +53,9 @@ const Hello = () => {
                 className="!z-20 relative"
               />
             </figure>
-            <figure className="">
-              <img
-                src={hello_pages_Bg_overlay1}
-                alt="hello_overlay"
-                className=" absolute  sm:opacity-80  md:opacity-80 sm:top-[-430px] sm:left-[-70px] md:top-[-430px] md:left-[-70px] lg:top-[-140px] lg:left-[-140px]  w-[470px] h-[492px] z-10 sm:block"
-              />
-              <img
-                src={hello_pages_Bg_overlay2}
-                alt="hello_overlay"
-                className=" absolute sm:top-[-330px] sm:opacity-80 md:opacity-80   sm:left-[160px] md:top-[-330px] md:left-[160px] lg:top-[125px] lg:left-[235px]  w-[454px] h-[492px] z-10"
-              />
-            </figure>
+
+            <div className="bg-teal_400 w-[400px] h-[400px]  md:w-[350px] md:h-[350px]   blur-[174px] opacity-50 md:opacity-40  absolute sm:w-[250px] sm:h-[250px]  sm:top-[-330px] sm:left-[20px] md:top-[-400px] md:left-[0px] lg:top-[-30px] lg:left-[-140px]   z-10 sm:block"></div>
+            <div className="bg-indigo_500 w-[400px] h-[400px]   md:w-[350px] md:h-[350px]  blur-[174px] opacity-75  md:opacity-40 absolute  sm:w-[250px] sm:h-[250px]    absolute sm:top-[-130px]    sm:left-[210px] md:top-[-150px] md:left-[250px] lg:top-[120px] lg:left-[180px]  z-10 "></div>
           </div>
         </div>
       </Container>

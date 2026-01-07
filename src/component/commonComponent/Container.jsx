@@ -8,7 +8,7 @@ const Container = ({ children, className }) => {
       mx-auto
        md:px-4
        sm:px-4
-     
+       
        ${className}`}
     >
       {children}
