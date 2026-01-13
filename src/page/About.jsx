@@ -1,12 +1,12 @@
-import AboutMe from '@/component/about'
-import React from 'react'
+import AboutMe from "@/component/about/aboutMain";
+import React from "react";
 
 const AboutPg = () => {
   return (
     <>
-     <AboutMe/>
-     </>
-  )
-}
+      <AboutMe />
+    </>
+  );
+};
 
-export default AboutPg
+export default AboutPg;
