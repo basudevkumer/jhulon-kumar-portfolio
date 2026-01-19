@@ -455,3 +455,13 @@
 .heading6 {
   @apply font-fira_code text-xl/[150%] font-extralight;
 }
+
+/* for scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: transparent;
+}
+

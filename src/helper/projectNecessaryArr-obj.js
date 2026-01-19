@@ -1,7 +1,17 @@
 import allIcon from "./IconProvider";
 import allImages from "./ImageProvider";
 
-const { footerIcon, rightChev, folder, downChev, email, call, mDown,aboutPageIcon } = allIcon;
+const {
+  footerIcon,
+  rightChev,
+  folder,
+  downChev,
+  email,
+  call,
+  mDown,
+  aboutPageIcon,
+  techIcons,
+} = allIcon;
 const { myselfImage, snippetOne, snippetTwo } = allImages;
 
 const navbarArray = [
@@ -132,7 +142,6 @@ const professionalInfo = [
     order: 3,
     isActive: true,
   },
- 
 ];
 
 const hobbies = [
@@ -158,8 +167,6 @@ const hobbies = [
     order: 2,
     isActive: true,
   },
-
- 
 ];
 
 const contact = [
@@ -205,11 +212,159 @@ const snippet = [
     codeImage: snippetTwo,
   },
 ];
+const allProjects = [
+  {
+    id: 1,
+    title: "Project 1 // ui-animations",
+    image: "paper-explosion.jpg",
+    description: "Duis aute irure...",
+    technologies: ["React", "CSS", "HTML", "Framer Motion"], // array of strings
+  },
+  {
+    id: 2,
+    title: "Project 2 // tetris-game",
+    image: "tetris-old-pc.jpg",
+    description: "Duis aute irure...",
+    technologies: ["HTML", "CSS", "JavaScript"],
+  },
+  {
+    id: 3,
+    title: "Project 2 // tetris-game",
+    image: "tetris-old-pc.jpg",
+    description: "Duis aute irure...",
+    technologies: ["HTML", "CSS", "JavaScript"],
+  },
+  {
+    id: 3,
+    title: "Project 2 // tetris-game",
+    image: "tetris-old-pc.jpg",
+    description: "Duis aute irure...",
+    technologies: ["HTML", "CSS", "JavaScript"],
+  },
+  {
+    id: 4,
+    title: "Project 2 // tetris-game",
+    image: "tetris-old-pc.jpg",
+    description: "Duis aute irure...",
+    technologies: ["HTML", "CSS", "JavaScript"],
+  },
+  {
+    id: 5,
+    title: "Project 2 // tetris-game",
+    image: "tetris-old-pc.jpg",
+    description: "Duis aute irure...",
+    technologies: ["HTML", "CSS", "JavaScript"],
+  },
+  {
+    id: 6,
+    title: "Project 2 // tetris-game",
+    image: "tetris-old-pc.jpg",
+    description: "Duis aute irure...",
+    technologies: ["HTML", "CSS", "JavaScript"],
+  },
+  {
+    id: 7,
+    title: "Project 2 // tetris-game",
+    image: "tetris-old-pc.jpg",
+    description: "Duis aute irure...",
+    technologies: ["HTML", "CSS", "JavaScript"],
+  },
+  {
+    id: 8,
+    title: "Project 2 // tetris-game",
+    image: "tetris-old-pc.jpg",
+    description: "Duis aute irure...",
+    technologies: ["HTML", "CSS", "JavaScript"],
+  },
+  {
+    id: 9,
+    title: "Project 2 // tetris-game",
+    image: "tetris-old-pc.jpg",
+    description: "Duis aute irure...",
+    technologies: ["HTML", "CSS", "JavaScript"],
+  },
+  {
+    id: 10,
+    title: "Project 2 // tetris-game",
+    image: "tetris-old-pc.jpg",
+    description: "Duis aute irure...",
+    technologies: ["HTML", "CSS", "JavaScript"],
+  },
+  {
+    id: 11,
+    title: "Project 2 // tetris-game",
+    image: "tetris-old-pc.jpg",
+    description: "Duis aute irure...",
+    technologies: ["HTML", "CSS", "JavaScript"],
+  },
+  {
+    id: 12,
+    title: "Project 2 // tetris-game",
+    image: "tetris-old-pc.jpg",
+    description: "Duis aute irure...",
+    technologies: ["HTML", "CSS", "JavaScript"],
+  },
+  {
+    id: 13,
+    title: "Project 2 // tetris-game",
+    image: "tetris-old-pc.jpg",
+    description: "Duis aute irure...",
+    technologies: ["HTML", "CSS", "JavaScript"],
+  },
+  {
+    id: 14,
+    title: "Project 2 // tetris-game",
+    image: "tetris-old-pc.jpg",
+    description: "Duis aute irure...",
+    technologies: ["HTML", "CSS", "JavaScript"],
+  },
+  {
+    id: 15,
+    title: "Project 2 // tetris-game",
+    image: "tetris-old-pc.jpg",
+    description: "Duis aute irure...",
+    technologies: ["HTML", "CSS", "JavaScript"],
+  },
+];
+
+const allTechIcons = [
+  {
+    id: 1,
+    name: "React",
+    icon: techIcons[0].icon,
+  },
+  {
+    id: 2,
+    name: "HTML",
+    icon: techIcons[1].icon,
+  },
+
+  { id: 3, name: "Tailwind", icon: techIcons[2].icon },
+  {
+    id: 4,
+    name: "Bootstrap",
+    icon: techIcons[3].icon,
+  },
+  { id: 5, name: "Javascript", icon: techIcons[4].icon },
+  { id: 6, name: "Next js", icon: techIcons[5].icon },
+  { id: 7, name: "Typescript", icon: techIcons[6].icon },
+];
 
 const aboutTitle = [
-  {id:1, icon:aboutPageIcon[0].icon  ,title: "personal-info"},
-  {id:2, icon:aboutPageIcon[1].icon  ,title: "professional-info"},
-  {id:3, icon:aboutPageIcon[2].icon  ,title: "hobbies-info"},
-]
+  { id: 1, icon: aboutPageIcon[0].icon, title: "personal-info" },
+  { id: 2, icon: aboutPageIcon[1].icon, title: "professional-info" },
+  { id: 3, icon: aboutPageIcon[2].icon, title: "hobbies-info" },
+];
 
-export { navbarArray, footerArray, bio, contact, snippet ,professionalInfo,hobbies,aboutTitle};
+export {
+  navbarArray,
+  footerArray,
+  bio,
+  contact,
+  snippet,
+  professionalInfo,
+  hobbies,
+  aboutTitle,
+  allProjects,
+  allTechIcons,
+};

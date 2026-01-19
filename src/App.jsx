@@ -5,6 +5,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import RootLayout from "@/routerRootLayout/RootLayout";
 import Home from "@/page/Home";
 import AboutMe from "./component/about/aboutMain";
+import Project from "@/page/Project";
 
 const App = () => {
   return (
@@ -14,6 +15,7 @@ const App = () => {
           <Route element={<RootLayout />}>
             <Route path="/" element={<Home />}></Route>
             <Route path="/about" element={<AboutMe />}></Route>
+            <Route path="/project" element={<Project />}></Route>
           </Route>
         </Routes>
       </BrowserRouter>

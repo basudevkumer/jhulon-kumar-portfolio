@@ -16,8 +16,13 @@ import { IoLogoMarkdown } from "react-icons/io";
 import { BiSolidMessageRoundedMinus } from "react-icons/bi";
 import { BiStar } from "react-icons/bi";
 import { IoClose } from "react-icons/io5";
-
-
+import { FaReact } from "react-icons/fa6";
+import { FaHtml5 } from "react-icons/fa6";
+import { RiTailwindCssFill } from "react-icons/ri";
+import { FaBootstrap } from "react-icons/fa";
+import { SiNextdotjs, SiTailwindcss } from "react-icons/si";
+import { SiTypescript } from "react-icons/si";
+import { FaJsSquare } from "react-icons/fa";
 
 const allIcon = {
   footerIcon: [
@@ -43,7 +48,16 @@ const allIcon = {
   mDown: <IoLogoMarkdown />,
   message: <BiSolidMessageRoundedMinus />,
   star: <BiStar />,
-  corss: <IoClose/>
+  corss: <IoClose />,
+  techIcons: [
+    { id: 1, icon: <FaReact /> },
+    { id: 2, icon: <FaHtml5 /> },
+    { id: 3, icon: <RiTailwindCssFill /> },
+    { id: 4, icon: <FaBootstrap /> },
+    { id: 5, icon: <FaJsSquare /> },
+    { id: 6, icon: <SiNextdotjs /> },
+    { id: 7, icon: <SiTypescript /> },
+  ],
 };
 
 export default allIcon;
