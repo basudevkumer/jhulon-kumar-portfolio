@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Container from "@/component/commonComponent/Container";
 import { navbarArray } from "@/helper/projectNecessaryArr-obj";
 import allIcon from "@/helper/IconProvider";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const { navbarTogglerIcon } = allIcon;
@@ -39,9 +40,10 @@ const Navbar = () => {
               const isActive = activeId === item.id;
 
               return item.isLast ? null : (
-                <li
-                  key={item.id}
-                  className={`
+                <Link to={item.to}>
+                  <li
+                    key={item.id}
+                    className={`
                       ${item.className}
                       border-slate_700
                       relative
@@ -62,12 +64,13 @@ const Navbar = () => {
                           : "after:scale-x-0"
                       }
                     `}
-                  onClick={() => !item.status && setActiveId(item.id)}
-                >
-                  <span className="body_thin_md text-slate_400 px-8 py-4 inline-block whitespace-nowrap">
-                    {item.name}
-                  </span>
-                </li>
+                    onClick={() => !item.status && setActiveId(item.id)}
+                  >
+                    <span className="body_thin_md text-slate_400 px-8 py-4 inline-block whitespace-nowrap">
+                      {item.name}
+                    </span>
+                  </li>
+                </Link>
               );
             })}
           </ul>
@@ -76,9 +79,10 @@ const Navbar = () => {
               const isActive = activeId === item.id;
 
               return item.isLast ? (
-                <li
-                  key={item.id}
-                  className={`
+                <Link to={item.to}>
+                  <li
+                    key={item.id}
+                    className={`
                         ${item.className}
                         border-slate_700
                         relative
@@ -99,12 +103,13 @@ const Navbar = () => {
                             : "after:scale-x-0"
                         }
                       `}
-                  onClick={() => !item.status && setActiveId(item.id)}
-                >
-                  <span className="body_thin_md text-slate_400 px-8 py-4 inline-block whitespace-nowrap">
-                    {item.name}
-                  </span>
-                </li>
+                    onClick={() => !item.status && setActiveId(item.id)}
+                  >
+                    <span className="body_thin_md text-slate_400 px-8 py-4 inline-block whitespace-nowrap">
+                      {item.name}
+                    </span>
+                  </li>
+                </Link>
               ) : null;
             })}
           </ul>

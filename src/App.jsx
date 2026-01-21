@@ -6,6 +6,7 @@ import RootLayout from "@/routerRootLayout/RootLayout";
 import Home from "@/page/Home";
 import AboutMe from "./component/about/aboutMain";
 import Project from "@/page/Project";
+import Contact from "./page/Contact";
 
 const App = () => {
   return (
@@ -14,8 +15,9 @@ const App = () => {
         <Routes>
           <Route element={<RootLayout />}>
             <Route path="/" element={<Home />}></Route>
-            <Route path="/about" element={<AboutMe />}></Route>
-            <Route path="/project" element={<Project />}></Route>
+            <Route path="/about-me" element={<AboutMe />}></Route>
+            <Route path="/projects" element={<Project />}></Route>
+            <Route path="/contact-me" element={<Contact />}></Route>
           </Route>
         </Routes>
       </BrowserRouter>

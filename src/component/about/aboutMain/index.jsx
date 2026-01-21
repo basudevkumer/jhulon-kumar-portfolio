@@ -26,18 +26,24 @@ const AboutMe = () => {
   const [activeLight, setActiveLight] = useState(null);
   const [title, setTitle] = useState("professional-info")
 
+
+
   // event handle
   const handleClicked = (aboutObj) => {
     setActiveId(aboutObj.id);
     setTitle(aboutObj.title)
   };
+   
+  const handleClickedContact =(id)=>{
+    setActiveLight(prev => prev === id ? null : id)
+  }
 
   return (
-    <section className="border  border-slate_700 bg-slate_900  ">
-      <div className="hidden lg:block">
-        <div className="grid grid-cols-5 min-h-[calc(100vh-190px)]   ">
-          <div className=" grid grid-cols-4  ">
-            <div className="py-3">
+    <section className="border  border-slate_700 bg-slate_900  h-full w-full  ">
+      <div className="hidden lg:block  h-full w-full">
+        <div className="grid grid-cols-5 h-full w-full ">
+          <div className=" grid grid-cols-4  h-full w-full ">
+            <div className="py-3"> 
               <ul className="flex flex-col items-center gap-y-8 ">
                 {aboutTitle.map((items) => {
                   const isActive = items.id === activeId;
@@ -56,7 +62,7 @@ const AboutMe = () => {
                 })}
               </ul>
             </div>
-            <div className="col-span-3 border-l border-slate-700  ">
+            <div className="col-span-3 border-l border-slate-700  h-full w-full">
               {activeId === 2 && (
                 <Personal
                   setActiveChevUp={setActiveChevUp}
@@ -102,7 +108,7 @@ const AboutMe = () => {
               </div>
             </div>
           </div>
-          <div className=" col-span-4 ">
+          <div className=" col-span-4  h-full w-full">
             <div className="border-l border-b border-slate_700 py-3 px-6 ">
               <p className="body_thin_md text-slate_400 flex gap-x-4 items-center cursor-pointer">
                 {title}
@@ -128,12 +134,12 @@ const AboutMe = () => {
                   <div className="bg-slate_500 w-[80%]  h-3 mt-3"></div>
                 </div>
               </div>
-              <div className=" col-span-2 grid grid-cols-12  ">
+              <div className=" col-span-2 grid grid-cols-12 h-full  ">
                 <div className="border-r border-l border-slate_700 col-span-11 pt-3 px-10">
                   <p className="body_thin_lg  text-slate_400 ">
                     // Code snippet showcase:
                   </p>
-                  <div className="pt-[60px] flex flex-col gap-y-8">
+                  <div className="pt-[60px] flex flex-col gap-y-8 h-fit">
                     {snippet.map((items) => {
                       return (
                         <div key={items.id} className="flex  flex-col gap-y-3">

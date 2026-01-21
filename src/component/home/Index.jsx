@@ -3,15 +3,12 @@ import Container from "../commonComponent/Container";
 import allImages from "@/helper/ImageProvider";
 
 const Hello = () => {
-  const {
-    hello_pages_Image,
-  
-  } = allImages;
+  const { hello_pages_Image } = allImages;
 
   return (
-    <section className="  border border-slate_700   bg-slate_900   ">
+    <section className=" h-full w-full  border border-slate_700   bg-slate_900   ">
       <Container>
-        <div className="sm:py-[150px] md:py-[150px] lg:py-[40px]  lg:grid lg:grid-cols-2 items-center w-full  gap-x-[146px]   min-h-[calc(100vh-190px)] ">
+        <div className="sm:py-[150px] md:py-[150px] lg:py-[40px]  lg:grid lg:grid-cols-2 items-center w-full  gap-x-[146px] ">
           <div className="md:pl-[100px] sm:pl-[40px]">
             <div className="pb-[75px] ">
               <h6 className="body_thin_lg text-slate_400">Hi all. I am</h6>
@@ -50,7 +47,7 @@ const Hello = () => {
               <img
                 src={hello_pages_Image}
                 alt="hello_bannar_Image"
-                className="!z-20 relative"
+                className="!z-20 relative  h-[px]"
               />
             </figure>
 

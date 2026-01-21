@@ -21,6 +21,7 @@ const navbarArray = [
     className: "border-r ",
     status: true,
     responsive: false,
+
   },
   {
     id: 2,
@@ -28,14 +29,16 @@ const navbarArray = [
     className: "border-r",
     status: false,
     responsive: true,
+    to: "/",
   },
-  { id: 3, name: "_about-me", className: "", status: false, responsive: true },
+  { id: 3, name: "_about-me", className: "", status: false, responsive: true ,to:"/about-me"},
   {
     id: 4,
     name: "_projects",
     className: "border-r border-l",
     status: false,
     responsive: true,
+    to: "/projects",
   },
 
   {
@@ -45,6 +48,7 @@ const navbarArray = [
     status: false,
     responsive: true,
     isLast: true,
+    to: "/contact-me",
   },
 ];
 

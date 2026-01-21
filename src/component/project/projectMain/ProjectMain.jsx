@@ -34,7 +34,7 @@ const ProjectMain = () => {
   });
   const { down } = allIcon;
   return (
-    <div className="grid grid-cols-5 border border-slate_700  min-h-[calc(100vh-190px)]">
+    <div className="grid grid-cols-5 border border-slate_700  h-full w-full ">
       <div className=" ">
         <p className="body_thin_md flex gap-x-2 text-slate_50 py-3 border-r border-b border-slate_700  px-6 ">
           <span>{down}</span> projects
@@ -73,7 +73,7 @@ const ProjectMain = () => {
             <div
               ref={parentRef}
               style={{
-                height: "calc(100vh - 330px)",
+                height: "calc(100vh - 300px)",
                 overflow: "auto", // Make it scroll!
               }}
             >
