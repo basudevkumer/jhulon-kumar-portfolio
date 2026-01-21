@@ -9,7 +9,7 @@ import Hobbies from "../hobbiesInfo/Hobbies";
 import Bio from "../personalInfo/Bio";
 import Interest from "../personalInfo/Interest";
 import HighSchool from "../personalInfo/HighSchool";
-import Univercity from "../personalInfo/UniverCity";
+import Univercity from "../personalInfo/Univercity";
 import Exprience from "../ProfessionalInfo/Exprience";
 import HardSkill from "../ProfessionalInfo/HardSkill";
 import SoftSkill from "../ProfessionalInfo/SoftSkill";
