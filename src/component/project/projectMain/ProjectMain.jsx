@@ -27,14 +27,28 @@ const ProjectMain = () => {
 
   // The scrollable element for your list
   const parentRef = React.useRef(null);
+  const smallResponsiveRef = React.useRef(null);
+  const mdResponsiveRef = React.useRef(null);
 
   const columnCount = 3;
   const rowCount = Math.ceil(allProjects.length / columnCount);
+  const mdColumnCount = 2;
+  const mdRowCount = Math.ceil(allProjects.length / mdColumnCount);
 
   // The virtualizer
   const rowVirtualizer = useVirtualizer({
     count: rowCount || 0,
     getScrollElement: () => parentRef.current,
+    estimateSize: () => 400,
+  });
+  const smRowVirtualizer = useVirtualizer({
+    count: allProjects.length || 0,
+    getScrollElement: () => smallResponsiveRef.current,
+    estimateSize: () => 400,
+  });
+  const mdRowVirtualizer = useVirtualizer({
+    count: mdRowCount || 0,
+    getScrollElement: () => mdResponsiveRef.current,
     estimateSize: () => 400,
   });
   const { down } = allIcon;
@@ -77,7 +91,7 @@ const ProjectMain = () => {
               <p className="text-slate-400  body_thin_md "> React</p>
             </div>
             <div className="grid grid-cols-12  h-full ">
-              <div className="col-span-11 p-[40px] pr-0   gap-10">
+              <div className="col-span-11 p-[40px] pr-0   gap-10 ">
                 {/* The scrollable element for your list */}
                 <div
                   ref={parentRef}
@@ -133,6 +147,7 @@ const ProjectMain = () => {
           </div>
         </div>
       </div>
+
       <div className="block lg:hidden border border-slate_700 h-full w-full">
         <button
           className="body_thin_md flex items-center gap-x-5 text-slate_50 py-3 bg-slate_700  px-6  w-full "
@@ -173,25 +188,25 @@ const ProjectMain = () => {
           </div>
         )}
 
-        <div className="text-white py-12 px-6">
+        <div className="text-white py-12 px-6  bg-yellow-500  block sm:hidden  ">
           {/* The scrollable element for your list */}
           <div
-            ref={parentRef}
+            ref={smallResponsiveRef}
             style={{
-              height: `400px`,
+              height: "calc(100vh - 250px)",
               overflow: "auto", // Make it scroll!
             }}
           >
             {/* The large inner element to hold all of the items */}
             <div
               style={{
-                height: `${rowVirtualizer.getTotalSize()}px`,
+                height: `${smRowVirtualizer.getTotalSize()}px`,
                 width: "100%",
                 position: "relative",
               }}
             >
               {/* Only the visible items in the virtualizer, manually positioned to be in view */}
-              {rowVirtualizer.getVirtualItems().map((virtualItem) => (
+              {smRowVirtualizer.getVirtualItems().map((virtualItem) => (
                 <div
                   key={virtualItem.key}
                   style={{
@@ -206,6 +221,49 @@ const ProjectMain = () => {
                   <ProjectCard key={virtualItem.index} />
                 </div>
               ))}
+            </div>
+          </div>
+        </div>
+        <div className="text-white py-12 px-6 hidden sm:block lg:hidden ">
+          {/* The scrollable element for your list */}
+          <div
+            ref={mdResponsiveRef}
+            style={{
+              height: "calc(100vh - 300px)",
+              overflow: "auto", // Make it scroll!
+            }}
+          >
+            {/* The large inner element to hold all of the items */}
+            <div
+              style={{
+                height: `${mdRowVirtualizer.getTotalSize()}px`,
+                width: "100%",
+                position: "relative",
+              }}
+            >
+              {/* Only the visible items in the virtualizer, manually positioned to be in view */}
+              {mdRowVirtualizer.getVirtualItems().map((virtualItem) => {
+                const startIndex = virtualItem.index * 2;
+                const startRow = allProjects.slice(startIndex, startIndex + 2);
+                return (
+                  <div
+                    key={virtualItem.key}
+                    style={{
+                      position: "absolute",
+                      top: 0,
+                      left: 0,
+                      width: "100%",
+                      height: `${virtualItem.size}px`,
+                      transform: `translateY(${virtualItem.start}px)`,
+                    }}
+                    className="grid grid-cols-2 gap-x-5"
+                  >
+                    {startRow.map((items) => {
+                      return <ProjectCard key={items.id} />;
+                    })}
+                  </div>
+                );
+              })}
             </div>
           </div>
         </div>
