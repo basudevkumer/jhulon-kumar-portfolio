@@ -463,11 +463,18 @@
 }
 
 /* for scrollbar */
+/* Chrome, Edge, Safari */
 ::-webkit-scrollbar {
   width: 6px;
 }
 
 ::-webkit-scrollbar-thumb {
   background-color: transparent;
+}
+
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: transparent transparent;
 }
 

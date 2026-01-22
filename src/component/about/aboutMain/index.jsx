@@ -205,7 +205,7 @@ const AboutMe = () => {
           </div>
         </div>
       </div>
-      <div className="lg:hidden ">
+      <div className="lg:hidden  h-full w-full">
         <div className="flex flex-col gap-y-1  ">
           {aboutobj.map((items) => {
             const isActive = items.id === active;
