@@ -1,7 +1,12 @@
 import React, { useEffect, useState } from "react";
 import allIcon from "@/helper/IconProvider";
 import { Link } from "react-router-dom";
-import { aboutTitle, contact, snippet } from "@/helper/projectNecessaryArr-obj";
+import {
+  aboutobj,
+  aboutTitle,
+  contact,
+  snippet,
+} from "@/helper/projectNecessaryArr-obj";
 import Educations from "../personalInfo/Bio";
 import Personal from "../personalInfo/Personal";
 import Professional from "../ProfessionalInfo/Professional";
@@ -17,33 +22,39 @@ import Sports from "../hobbiesInfo/Sports";
 import Game from "../hobbiesInfo/Game";
 
 const AboutMe = () => {
+  // handle event
+
+  const handleActive = (id) => {
+    setActive((prev) => (prev === id ? null : id));
+  };
+
   //for icon
-  const {  message, star, down, corss } = allIcon;
+  const { message, star, down, corss, rightArrow } = allIcon;
 
   // manage state
-  const [activeId, setActiveId] = useState(2);  
+  const [activeId, setActiveId] = useState(2);
   const [activeChevUp, setActiveChevUp] = useState(1);
+
   const [activeLight, setActiveLight] = useState(null);
-  const [title, setTitle] = useState("professional-info")
-
-
+  const [title, setTitle] = useState("professional-info");
+  const [active, setActive] = useState(1);
 
   // event handle
   const handleClicked = (aboutObj) => {
     setActiveId(aboutObj.id);
-    setTitle(aboutObj.title)
+    setTitle(aboutObj.title);
   };
-   
-  const handleClickedContact =(id)=>{
-    setActiveLight(prev => prev === id ? null : id)
-  }
+
+  const handleClickedContact = (id) => {
+    setActiveLight((prev) => (prev === id ? null : id));
+  };
 
   return (
     <section className="border  border-slate_700 bg-slate_900  h-full w-full  ">
       <div className="hidden lg:block  h-full w-full">
         <div className="grid grid-cols-5 h-full w-full ">
           <div className=" grid grid-cols-4  h-full w-full ">
-            <div className="py-3"> 
+            <div className="py-3">
               <ul className="flex flex-col items-center gap-y-8 ">
                 {aboutTitle.map((items) => {
                   const isActive = items.id === activeId;
@@ -53,7 +64,9 @@ const AboutMe = () => {
                         className={`text-4xl  transition hover:text-slate_300 duration-300 ease-in-out   ${
                           isActive ? "text-slate_300" : "text-slate_500"
                         }`}
-                        onClick={() => handleClicked({id:items.id,title:items.title})}
+                        onClick={() =>
+                          handleClicked({ id: items.id, title: items.title })
+                        }
                       >
                         {items.icon}
                       </Link>
@@ -192,9 +205,137 @@ const AboutMe = () => {
           </div>
         </div>
       </div>
+      <div className="lg:hidden ">
+        <div className="flex flex-col gap-y-1  ">
+          {aboutobj.map((items) => {
+            const isActive = items.id === active;
+            return (
+              <div key={items.id} className="">
+                <button
+                  className="body_thin_md text-slate_50 cursor-pointer  bg-slate_700  py-3 px-6 w-full text-start flex items-center gap-x-3"
+                  onClick={() => handleActive(items.id)}
+                >
+                  <span className="flex items-center">
+                    {isActive ? (
+                      down
+                    ) : (
+                      <span className="-rotate-90 inline-block"> {down}</span>
+                    )}
+                  </span>
+                  {items.title}
+                </button>
+                {active === 1 && isActive && (
+                  <Personal
+                    setActiveChevUp={setActiveChevUp}
+                    activeChevUp={activeChevUp}
+                  />
+                )}
+                {active === 2 && isActive && (
+                  <Professional
+                    setActiveChevUp={setActiveChevUp}
+                    activeChevUp={activeChevUp}
+                  />
+                )}
+                {active === 3 && isActive && (
+                  <Hobbies
+                    setActiveChevUp={setActiveChevUp}
+                    activeChevUp={activeChevUp}
+                  />
+                )}
+                {active === 4 && isActive && (
+                  <div>
+                    <div className="px-6 py-3">
+                      <ul className="space-y-2">
+                        {contact.map((items) => {
+                          const isLight = activeLight === items.id;
+                          return (
+                            <li
+                              className={`cursor-pointer cursor-pointer body_thin_md   flex  items-center gap-x-[10px] ${
+                                isLight ? "text-slate_50" : "text-slate_400"
+                              }`}
+                              key={items.key}
+                              onClick={() => handleClickedContact(items.id)}
+                            >
+                              <span>{items.icon}</span>
+                              {items.displayName}
+                            </li>
+                          );
+                        })}
+                      </ul>
+                    </div>
+                  </div>
+                )}
+              </div>
+            );
+          })}
+        </div>
+        <div className="p-6">
+          {/* for personal info */}
+          {active === 1 && activeChevUp === 1 && <Bio />}
+          {active === 1 && activeChevUp === 2 && <Interest />}
+          {active === 1 && activeChevUp === 3 && <Educations />}
+          {active === 1 && activeChevUp === 4 && <HighSchool />}
+          {active === 1 && activeChevUp === 5 && <Univercity />}
+
+          {/* for professional info */}
+          {active === 2 && activeChevUp === 1 && <Exprience />}
+          {active === 2 && activeChevUp === 2 && <HardSkill />}
+          {active === 2 && activeChevUp === 3 && <SoftSkill />}
+          {/* for hobbies info */}
+          {active === 3 && activeChevUp === 1 && <Sports />}
+          {active === 3 && activeChevUp === 2 && <Game />}
+        </div>
+        <div>
+          <div className="pb-5">
+            <div className="pt-[50px] flex flex-col gap-y-8 ">
+              {snippet.map((items) => {
+                return (
+                  <div key={items.id} className="flex  flex-col gap-y-3">
+                    <div className="flex flex-col items-center  gap-y-4">
+                      <div className="flex items-center gap-x-3">
+                        <figure>
+                          <img
+                            src={items.userImage}
+                            className={" h-9 w-9 rounded-full"}
+                            alt="snippet Image"
+                          />
+                        </figure>
+                        <div>
+                          <p className="body_bold_sm text-indigo_500 ">
+                            {items.userName}
+                          </p>
+                          <p className="text-slate_500">
+                            Created {items.time} months ago
+                          </p>
+                        </div>
+                      </div>
+                      <div className="flex gap-x-3 ">
+                        <a
+                          href={items.to}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="flex  gap-x-2 text-slate_400 body_thin_sm"
+                        >
+                          <span>{message}</span> {items.details}
+                        </a>
+                        <p className="flex  gap-x-2 text-slate_400 body_thin_sm">
+                          <span>{star}</span>
+                          {items.star} stars
+                        </p>
+                      </div>
+                    </div>
+                    <figure>
+                      <img src={items.codeImage} alt="codeImage" />
+                    </figure>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
   );
 };
 
 export default AboutMe;
-

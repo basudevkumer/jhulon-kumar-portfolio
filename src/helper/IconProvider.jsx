@@ -23,6 +23,8 @@ import { FaBootstrap } from "react-icons/fa";
 import { SiNextdotjs, SiTailwindcss } from "react-icons/si";
 import { SiTypescript } from "react-icons/si";
 import { FaJsSquare } from "react-icons/fa";
+import { BiSolidRightArrow } from "react-icons/bi";
+
 
 const allIcon = {
   footerIcon: [
@@ -40,6 +42,7 @@ const allIcon = {
     { id: 3, icon: <RiGamepadFill />, to: "" },
   ],
   down: <FaSortDown />,
+  rightArrow: <BiSolidRightArrow/> ,
   rightChev: <FaChevronRight />,
   downChev: <FaChevronDown />,
   folder: <RiFolder3Fill />,

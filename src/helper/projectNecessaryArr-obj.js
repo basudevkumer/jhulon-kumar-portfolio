@@ -355,10 +355,17 @@ const allTechIcons = [
 ];
 
 const aboutTitle = [
-  { id: 1, icon: aboutPageIcon[0].icon, title: "personal-info" },
-  { id: 2, icon: aboutPageIcon[1].icon, title: "professional-info" },
+  { id: 1, icon: aboutPageIcon[0].icon, title: "professional-info" },
+  { id: 2, icon: aboutPageIcon[1].icon, title: "personal-info" },
   { id: 3, icon: aboutPageIcon[2].icon, title: "hobbies-info" },
 ];
+
+const aboutobj = [
+  { id: 1, title: "personal-info" },
+  { id: 2, title: "professional-info" },
+  { id: 3, title: "hobbies" },
+  { id: 4, title: "contacts" },
+]
 
 export {
   navbarArray,
@@ -371,4 +378,5 @@ export {
   aboutTitle,
   allProjects,
   allTechIcons,
+  aboutobj
 };

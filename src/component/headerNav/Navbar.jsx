@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Container from "@/component/commonComponent/Container";
 import { navbarArray } from "@/helper/projectNecessaryArr-obj";
 import allIcon from "@/helper/IconProvider";
@@ -7,12 +7,21 @@ import { Link } from "react-router-dom";
 const Navbar = () => {
   const { navbarTogglerIcon } = allIcon;
   const [isOpen, setIsOpen] = useState(false);
+  const [height, setHeight] = useState(0);
+   
+  console.log(height);
+  
 
   const [activeId, setActiveId] = useState(2);
 
   const handleClicked = () => {
     setIsOpen(!isOpen);
   };
+
+  useEffect(() => {
+    const h = window.innerHeight;
+    setHeight(h);
+  }, []);
 
   return (
     <section className="md:pt-4 sm:pt-4 ">
@@ -116,9 +125,10 @@ const Navbar = () => {
         </nav>
 
         {isOpen && (
-          <div className="w-full lg:hidden  relative ">
+          <div className="w-full h-full lg:hidden  relative ">
             <div
-              className={`absolute top-0 right-0  bg-slate_900  w-full h-[583.2px] border border-slate_700 z-20 `}
+              className={`absolute top-0 right-0  bg-slate_900   border border-slate_700 z-20 w-full`}
+              style={{ height: `${height*(85/100)}px` }}
             >
               <ul className="">
                 <li className="py-3 px-6 text-slate_400 border border-slate_700">

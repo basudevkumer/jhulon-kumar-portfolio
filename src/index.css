@@ -440,6 +440,9 @@
 .heading1 {
   @apply font-fira_code text-6xl/[110%] font-extralight;
 }
+.heading1xs {
+  @apply font-fira_code text-3xl/[110%] font-extralight;
+}
 .heading2 {
   @apply font-fira_code text-5xl/[120%] font-extralight;
 }
@@ -448,6 +451,9 @@
 }
 .heading4 {
   @apply font-fira_code text-3xl/[140%] font-extralight;
+}
+.heading4xs {
+  @apply font-fira_code text-lg/[140%]  font-extralight whitespace-nowrap;
 }
 .heading5 {
   @apply font-fira_code text-2xl/[140%] font-extralight;

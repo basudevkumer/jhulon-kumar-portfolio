@@ -13,11 +13,13 @@ const Professional = ({ activeChevUp, setActiveChevUp }) => {
   return (
     <div>
       <div>
-        <p className="body_thin_md text-slate_50 px-6 py-3 flex  gap-x-2 items-center">
+       <div className="lg:block hidden"> 
+ <p className="body_thin_md text-slate_50 px-6 py-3 flex  gap-x-2 items-center">
           {" "}
-          <span className="text-lg">{down}</span> personal-info
+          <span className="text-lg">{down}</span> professional-info
         </p>
-        <div className="border-t border-b border-slate_700 p-3">
+       </div>
+        <div className="lg:border-t lg:border-b border-slate_700 lg:p-3 px-6 py-3">
           <ul className="space-y-2">
             {professionalInfo.map((items) => {
               const isChevUpTrue = items.id === activeChevUp;
