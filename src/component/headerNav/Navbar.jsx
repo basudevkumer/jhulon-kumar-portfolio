@@ -8,9 +8,8 @@ const Navbar = () => {
   const { navbarTogglerIcon } = allIcon;
   const [isOpen, setIsOpen] = useState(false);
   const [height, setHeight] = useState(0);
-   
+
   console.log(height);
-  
 
   const [activeId, setActiveId] = useState(2);
 
@@ -128,7 +127,7 @@ const Navbar = () => {
           <div className="w-full h-full lg:hidden  relative ">
             <div
               className={`absolute top-0 right-0  bg-slate_900   border border-slate_700 z-20 w-full`}
-              style={{ height: `${height*(85/100)}px` }}
+              style={{ height: `${height * (85 / 100)}px` }}
             >
               <ul className="">
                 <li className="py-3 px-6 text-slate_400 border border-slate_700">
@@ -140,7 +139,7 @@ const Navbar = () => {
                       className="py-3 px-6 text-slate_50 border border-slate_700"
                       key={index}
                     >
-                      {items.name}
+                      <Link to={items.to}> {items.name}</Link>
                     </li>
                   ) : (
                     " "
