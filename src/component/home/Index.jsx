@@ -8,7 +8,7 @@ const Hello = () => {
   return (
     <section className=" h-full w-full border  border-b-0 lg:border border-slate_700   bg-slate_900   ">
       <Container>
-        <div className=" py-[50px] sm:px-5  sm:py-[150px] md:py-[150px] lg:py-[40px]   grid grid-cols-1 lg:grid-cols-2 items-center w-full  gap-x-[146px] ">
+        <div className=" py-[50px] px-5  sm:py-[150px] md:py-[150px] lg:py-[40px]   grid grid-cols-1 lg:grid-cols-2 items-center w-full  gap-x-[146px] ">
           <div className="md:pl-[100px] sm:pl-[40px]">
             <div className=" pb-12 sm:pb-[75px] ">
               <h6 className="body_thin_lg text-slate_400">Hi all. I am</h6>
