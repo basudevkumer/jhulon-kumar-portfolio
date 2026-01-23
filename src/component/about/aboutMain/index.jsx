@@ -50,7 +50,7 @@ const AboutMe = () => {
   };
 
   return (
-    <section className="border  border-slate_700 bg-slate_900  h-full w-full  ">
+    <section className="border  border-slate_700 bg-slate_900  h-full w-full">
       <div className="hidden lg:block  h-full w-full">
         <div className="grid grid-cols-5 h-full w-full ">
           <div className=" grid grid-cols-4  h-full w-full ">
