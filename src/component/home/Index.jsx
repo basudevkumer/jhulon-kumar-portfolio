@@ -35,7 +35,7 @@ const Hello = () => {
                 
                 <a
                   href="https://github.com/basudevkumer"
-                  className="body_thin_md text-rose_300 inline-block "
+                  className="body_thin_md text-rose_300 inline-block whitespace-wrap"
                   target="blank"
                 >
                   “https://github.com/basudevkumer”

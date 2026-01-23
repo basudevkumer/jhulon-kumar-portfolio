@@ -188,7 +188,7 @@ const ProjectMain = () => {
           </div>
         )}
 
-        <div className="text-white py-12 px-6  bg-yellow-500  block sm:hidden  ">
+        <div className="text-white py-12 px-6   block sm:hidden  ">
           {/* The scrollable element for your list */}
           <div
             ref={smallResponsiveRef}
