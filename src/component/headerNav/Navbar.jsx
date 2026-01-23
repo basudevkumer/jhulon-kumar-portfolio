@@ -127,7 +127,7 @@ const Navbar = () => {
           <div className="w-full h-full lg:hidden  relative ">
             <div
               className={`absolute top-0 right-0  bg-slate_900   border border-slate_700 z-20 w-full`}
-              style={{ height: `${height * (85 / 100)}px` }}
+              style={{ height: `${height}px` }}
             >
               <ul className="">
                 <li className="py-3 px-6 text-slate_400 border border-slate_700">
