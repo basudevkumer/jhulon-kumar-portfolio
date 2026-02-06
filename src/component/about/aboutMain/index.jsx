@@ -7,7 +7,7 @@ import {
   contact,
   snippet,
 } from "@/helper/projectNecessaryArr-obj";
-import Educations from "../personalInfo/Bio";
+
 import Personal from "../personalInfo/Personal";
 import Professional from "../ProfessionalInfo/Professional";
 import Hobbies from "../hobbiesInfo/Hobbies";
@@ -20,6 +20,7 @@ import HardSkill from "../ProfessionalInfo/HardSkill";
 import SoftSkill from "../ProfessionalInfo/SoftSkill";
 import Sports from "../hobbiesInfo/Sports";
 import Game from "../hobbiesInfo/Game";
+import Education from "../personalInfo/Education";
 
 const AboutMe = () => {
   // handle event
@@ -34,6 +35,9 @@ const AboutMe = () => {
   // manage state
   const [activeId, setActiveId] = useState(2);
   const [activeChevUp, setActiveChevUp] = useState(1);
+
+  console.log(activeId);
+  console.log(activeChevUp);
 
   const [activeLight, setActiveLight] = useState(null);
   const [title, setTitle] = useState("professional-info");
@@ -133,7 +137,7 @@ const AboutMe = () => {
                 <div className="border-r border-l border-slate_700 col-span-11 pt-3 px-10">
                   {activeChevUp === 1 && activeId === 2 && <Bio />}
                   {activeChevUp === 2 && activeId === 2 && <Interest />}
-                  {activeChevUp === 3 && activeId === 2 && <Educations />}
+                  {activeChevUp === 3 && activeId === 2 && <Education />}
                   {activeChevUp === 4 && activeId === 2 && <HighSchool />}
                   {activeChevUp === 5 && activeId === 2 && <Univercity />}
                   {activeChevUp === 1 && activeId === 1 && <Exprience />}
@@ -273,7 +277,7 @@ const AboutMe = () => {
           {/* for personal info */}
           {active === 1 && activeChevUp === 1 && <Bio />}
           {active === 1 && activeChevUp === 2 && <Interest />}
-          {active === 1 && activeChevUp === 3 && <Educations />}
+          {active === 1 && activeChevUp === 3 && <Education />}
           {active === 1 && activeChevUp === 4 && <HighSchool />}
           {active === 1 && activeChevUp === 5 && <Univercity />}
 

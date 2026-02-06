@@ -4,30 +4,24 @@ const Univercity = () => {
   return (
     <div>
       <pre className="body_thin_lg text-slate_400 hidden lg:block">
-        {`1. /**
-2.  * univercity
-3.  * I have 5 years of experience in
-4.  * Lorem ipsum dolor sit ame
-5.  * sed do eiusmod tempor incid
-6.  * Ut enim ad minim veniam, 
-7.  * nisi ut aliquip ex ea 
-8.  * Duis aute irure dolor in 
-9.  * cillum dolore eu fugiat 
-10. * Excepteur sint occaecat off
-10. * Excepteur sint occaecat off
-10. * Excepteur sint occaecat off
-10. * Excepteur sint occaecat off
-11. */
+        {`1. 1. /**
+2.  * Diploma Education
+3.  * I completed a 4-year Diploma in
+4.  * Computer Technology from
+5.  * Sylhet Polytechnic Institute.
+6.  *
+7.  * Duration: 2020 - 2021
+8.  *
+9.  * This program helped me gain
+10. * strong technical knowledge and
+11. * practical skills in technology.
+12. */
+
 `}
       </pre>
        <div className="lg:hidden">
         <p className="body_thin_lg text-slate_400">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae
-          labore iusto nobis, corporis maiores porro obcaecati iste animi
-          doloribus quod, iure aut explicabo ea quam, alias asperiores tempora
-          amet. Praesentium! Lorem ipsum dolor sit amet consectetur adipisicing
-          elit. Commodi, quae ullam doloremque earum aliquam aliquid quam id
-          saepe repellat totam?
+          I completed a 4-year Diploma in Computer Technology from Sylhet Polytechnic Institute. Duration: 2020–2021. This program helped me gain strong technical knowledge and practical skills in technology.
         </p>
       </div>
     </div>

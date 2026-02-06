@@ -88,7 +88,7 @@ const ProjectMain = () => {
           </div>
           <div className="col-span-4  border-l border-slate-700">
             <div className="py-3 px-6 border-b border-slate-700">
-              <p className="text-slate-400  body_thin_md "> React</p>
+              <p className="text-slate-400  body_thin_md"> React</p>
             </div>
             <div className="grid grid-cols-12  h-full ">
               <div className="col-span-11 p-[40px] pr-0   gap-10 ">
@@ -131,7 +131,7 @@ const ProjectMain = () => {
                           className="text-white  grid grid-cols-3  gap-x-6"
                         >
                           {startRow.map((items) => {
-                            return <ProjectCard key={items.id} />;
+                            return <ProjectCard key={items.id} value={items} />;
                           })}
                         </div>
                       );
@@ -206,21 +206,29 @@ const ProjectMain = () => {
               }}
             >
               {/* Only the visible items in the virtualizer, manually positioned to be in view */}
-              {smRowVirtualizer.getVirtualItems().map((virtualItem) => (
-                <div
-                  key={virtualItem.key}
-                  style={{
-                    position: "absolute",
-                    top: 0,
-                    left: 0,
-                    width: "100%",
-                    height: `${virtualItem.size}px`,
-                    transform: `translateY(${virtualItem.start}px)`,
-                  }}
-                >
-                  <ProjectCard key={virtualItem.index} />
-                </div>
-              ))}
+              {smRowVirtualizer.getVirtualItems().map((virtualItem) => {
+                const startIndex = virtualItem.index * 1;
+                 const startRow = allProjects.slice(startIndex, startIndex + 1);
+                return (
+                  <div
+                    key={virtualItem.key}
+                    style={{
+                      position: "absolute",
+                      top: 0,
+                      left: 0,
+                      width: "100%",
+                      height: `${virtualItem.size}px`,
+                      transform: `translateY(${virtualItem.start}px)`,
+                    }}
+                  >
+                   {
+                    startRow.map((items,index)=>{
+                      return  <ProjectCard key={index} value={items} />
+                    })
+                   }
+                  </div>
+                );
+              })}
             </div>
           </div>
         </div>
@@ -245,6 +253,7 @@ const ProjectMain = () => {
               {mdRowVirtualizer.getVirtualItems().map((virtualItem) => {
                 const startIndex = virtualItem.index * 2;
                 const startRow = allProjects.slice(startIndex, startIndex + 2);
+
                 return (
                   <div
                     key={virtualItem.key}
@@ -259,7 +268,9 @@ const ProjectMain = () => {
                     className="grid grid-cols-2 gap-x-5"
                   >
                     {startRow.map((items) => {
-                      return <ProjectCard key={items.id} />;
+                      
+
+                      return <ProjectCard key={items.id} value={items} />;
                     })}
                   </div>
                 );

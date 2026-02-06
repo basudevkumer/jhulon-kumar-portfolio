@@ -5,29 +5,23 @@ const Game = () => {
      <div>
       <pre className="body_thin_lg text-slate_400 hidden lg:block">
         {`1. /**
-2.  * Favourits game
-3.  * I have 5 years of experience in
-4.  * Lorem ipsum dolor sit ame
-5.  * sed do eiusmod tempor incid
-6.  * Ut enim ad minim veniam, 
-7.  * nisi ut aliquip ex ea 
-8.  * Duis aute irure dolor in 
-9.  * cillum dolore eu fugiat 
-10. * Excepteur sint occaecat off
-10. * Excepteur sint occaecat off
-10. * Excepteur sint occaecat off
-10. * Excepteur sint occaecat off
+2.  * Favourite Game
+3.  *
+4.  * My favourite games include Cricket
+5.  * and Carrom.
+6.  *
+7.  * Playing these games helps me develop
+8.  * strategic thinking, focus, and
+9.  * patience, which also supports my
+10. * professional work and problem-solving skills.
 11. */
+
 `}
       </pre>
        <div className="lg:hidden">
         <p className="body_thin_lg text-slate_400">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae
-          labore iusto nobis, corporis maiores porro obcaecati iste animi
-          doloribus quod, iure aut explicabo ea quam, alias asperiores tempora
-          amet. Praesentium! Lorem ipsum dolor sit amet consectetur adipisicing
-          elit. Commodi, quae ullam doloremque earum aliquam aliquid quam id
-          saepe repellat totam?
+          My favourite games include Football and Carrom. Playing these games helps me develop strategic thinking, focus, and patience, which also supports my professional work and problem-solving skills.
+
         </p>
       </div>
     </div>

@@ -13,12 +13,12 @@ const Professional = ({ activeChevUp, setActiveChevUp }) => {
   return (
     <div>
       <div>
-       <div className="lg:block hidden"> 
- <p className="body_thin_md text-slate_50 px-6 py-3 flex  gap-x-2 items-center">
-          {" "}
-          <span className="text-lg">{down}</span> professional-info
-        </p>
-       </div>
+        <div className="lg:block hidden">
+          <p className="body_thin_md text-slate_50 px-6 py-3 flex  gap-x-2 items-center">
+            {" "}
+            <span className="text-lg">{down}</span> professional-info
+          </p>
+        </div>
         <div className="lg:border-t lg:border-b border-slate_700 lg:p-3 px-6 py-3">
           <ul className="space-y-2">
             {professionalInfo.map((items) => {
@@ -26,7 +26,7 @@ const Professional = ({ activeChevUp, setActiveChevUp }) => {
               return (
                 <li
                   onClick={() => handleClickedBio(items.id)}
-                  key={items.key}
+                  key={items.id}
                   className={`cursor-pointer body_thin_md lowercase flex items-center gap-x-[10px]  ${
                     items.className
                   } hover:text-slate_50 translate duration-300 ease-in-out ${

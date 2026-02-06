@@ -5,29 +5,22 @@ const HighSchool = () => {
         <div>
       <pre className="body_thin_lg text-slate_400 hidden lg:block">
         {`1. /**
-2.  * Height School
-3.  * I have 5 years of experience in
-4.  * Lorem ipsum dolor sit ame
-5.  * sed do eiusmod tempor incid
-6.  * Ut enim ad minim veniam, 
-7.  * nisi ut aliquip ex ea 
-8.  * Duis aute irure dolor in 
-9.  * cillum dolore eu fugiat 
-10. * Excepteur sint occaecat off
-10. * Excepteur sint occaecat off
-10. * Excepteur sint occaecat off
-10. * Excepteur sint occaecat off
+2.  * High School
+3.  * I completed my high school education
+4.  * at Dr. Mohammad Shahidullah Adarsha
+5.  * Uchcha Madyamic Bidyapith.
+6.  *
+7.  * During this time, I built a strong
+8.  * academic foundation and developed
+9.  * discipline, consistency, and interest
+10. * in technology and learning.
 11. */
 `}
       </pre>
        <div className="lg:hidden">
         <p className="body_thin_lg text-slate_400">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae
-          labore iusto nobis, corporis maiores porro obcaecati iste animi
-          doloribus quod, iure aut explicabo ea quam, alias asperiores tempora
-          amet. Praesentium! Lorem ipsum dolor sit amet consectetur adipisicing
-          elit. Commodi, quae ullam doloremque earum aliquam aliquid quam id
-          saepe repellat totam?
+         I completed my high school education at Dr. Mohammad Shahidullah Adarsha Uchcha Madyamic Bidyapith. During this time, I built a strong academic foundation and developed discipline, consistency, and a growing interest in technology and learning.
+
         </p>
       </div>
     </div>
