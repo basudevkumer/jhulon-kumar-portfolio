@@ -48,9 +48,9 @@ const Navbar = () => {
               const isActive = activeId === item.id;
 
               return item.isLast ? null : (
-                <Link to={item.to}>
+                <Link to={item.to}  key={item.id} >
                   <li
-                    key={item.id}
+                   
                     className={`
                       ${item.className}
                       border-slate_700
@@ -87,9 +87,9 @@ const Navbar = () => {
               const isActive = activeId === item.id;
 
               return item.isLast ? (
-                <Link to={item.to}>
+                <Link to={item.to}   key={item.id}>
                   <li
-                    key={item.id}
+                  
                     className={`
                         ${item.className}
                         border-slate_700
