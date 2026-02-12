@@ -24,6 +24,8 @@ import { SiNextdotjs, SiTailwindcss } from "react-icons/si";
 import { SiTypescript } from "react-icons/si";
 import { FaJsSquare } from "react-icons/fa";
 import { BiSolidRightArrow } from "react-icons/bi";
+import { SiReactbootstrap } from "react-icons/si";
+
 
 
 const allIcon = {
@@ -60,6 +62,8 @@ const allIcon = {
     { id: 5, icon: <FaJsSquare /> },
     { id: 6, icon: <SiNextdotjs /> },
     { id: 7, icon: <SiTypescript /> },
+    { id: 8, icon: <SiReactbootstrap /> },
+    
   ],
 };
 

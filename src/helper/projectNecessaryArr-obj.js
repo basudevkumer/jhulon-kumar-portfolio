@@ -244,6 +244,7 @@ const allProjects = [
       "JavaScript",
     ],
     to: "https://e-commerce1-0.vercel.app/",
+    mainTect: techIcons[0].icon,
   },
   {
     id: 2,
@@ -263,6 +264,7 @@ const allProjects = [
       "JavaScript",
     ],
     to: "https://react-innovale-one.vercel.app/",
+    mainTect: techIcons[7].icon,
   },
   {
     id: 3,
@@ -282,6 +284,7 @@ const allProjects = [
       "JavaScript",
     ],
     to: "https://innovale2.vercel.app/",
+    mainTect: techIcons[7].icon,
   },
   {
     id: 4,
@@ -292,6 +295,7 @@ const allProjects = [
       "A clean and modern blockchain-themed landing page design.\nCreated to practice layout composition and Tailwind styling.",
     technologies: ["HTML", "CSS", "tailwind", "tailwind-cli"],
     to: "https://blockchain-xi-henna.vercel.app/",
+    mainTect: techIcons[2].icon,
   },
   {
     id: 5,
@@ -310,6 +314,7 @@ const allProjects = [
       "react-router",
     ],
     to: "https://innovate5.vercel.app/",
+    mainTect: techIcons[0].icon,
   },
   {
     id: 6,
@@ -328,6 +333,7 @@ const allProjects = [
       "react",
     ],
     to: "https://foodi-zeta-livid.vercel.app/",
+   mainTect: techIcons[0].icon,
   },
   {
     id: 7,
@@ -348,6 +354,7 @@ const allProjects = [
       "aos",
     ],
     to: "https://react-finsweet-two.vercel.app/",
+    mainTect: techIcons[7].icon,
   },
   {
     id: 8,
@@ -358,6 +365,7 @@ const allProjects = [
       "A simple yet elegant landing page design concept.\nFocused on clean layout and basic styling techniques.",
     technologies: ["HTML", "CSS"],
     to: "https://basudevkumer.github.io/freshWebsite/",
+    mainTect: techIcons[1].icon,
   },
   {
     id: 9,
@@ -368,6 +376,7 @@ const allProjects = [
       "A demo website built for layout and styling practice.\nExplores Bootstrap components and responsive behavior.",
     technologies: ["HTML", "CSS", "bootstrap"],
     to: "https://basudevkumer.github.io/Boot_Project_1/",
+    mainTect: techIcons[3].icon,
   },
   {
     id: 10,
@@ -386,6 +395,7 @@ const allProjects = [
       "JavaScript",
     ],
     to: "https://innvate4.vercel.app/",
+    mainTect: techIcons[0].icon,
   },
   {
     id: 11,
@@ -403,6 +413,7 @@ const allProjects = [
       "JavaScript",
     ],
     to: "https://github.com/basudevkumer/innovate5",
+     mainTect: techIcons[0].icon,
   },
   {
     id: 12,
@@ -422,6 +433,7 @@ const allProjects = [
       "flowbite-react",
     ],
     to: "https://innovate6.vercel.app/",
+    mainTect: techIcons[0].icon,
   },
   {
     id: 13,
@@ -432,6 +444,7 @@ const allProjects = [
       "A clean Bootstrap-based landing page layout experiment.\nFocused on grid usage and visual balance.",
     technologies: ["HTML", "CSS", "bootstrap"],
     to: "https://innovate7.vercel.app/",
+     mainTect: techIcons[3].icon,
   },
   {
     id: 14,
@@ -449,6 +462,7 @@ const allProjects = [
       "JavaScript",
     ],
     to: "https://innovate8-seven.vercel.app/",
+     mainTect: techIcons[0].icon,
   },
   {
     id: 15,
@@ -466,6 +480,7 @@ const allProjects = [
       "JavaScript",
     ],
     to: "https://innovate9.vercel.app/",
+     mainTect: techIcons[0].icon,
   },
   {
     id: 16,
@@ -476,6 +491,7 @@ const allProjects = [
       "A simple carousel-based UI interaction project.\nCreated to understand animations and sliding behavior.",
     technologies: ["HTML", "CSS", "tailwind", "JavaScript"],
     to: "https://caurosel.vercel.app/",
+     mainTect: techIcons[4].icon,
   },
   {
     id: 17,
@@ -486,6 +502,7 @@ const allProjects = [
       "A basic quiz application with dynamic question flow.\nFocused on logic handling and DOM interactions.",
     technologies: ["HTML", "CSS", "tailwind", "JavaScript"],
     to: "https://simple-quiz-app-qo7i.vercel.app/",
+    mainTect: techIcons[4].icon,
   },
   {
     id: 18,
@@ -496,6 +513,7 @@ const allProjects = [
       "A toast notification UI experiment for user feedback.\nBuilt to practice event-driven interactions and timing.",
     technologies: ["HTML", "CSS", "bootstrap", "JavaScript"],
     to: "https://basudevkumer.github.io/Toast-js/",
+     mainTect: techIcons[4].icon,
   },
 ];
 
@@ -520,6 +538,7 @@ const allTechIcons = [
   { id: 5, name: "Javascript", icon: techIcons[4].icon },
   { id: 6, name: "Next js", icon: techIcons[5].icon },
   { id: 7, name: "Typescript", icon: techIcons[6].icon },
+  { id: 8, name: "React-Bootstrap", icon: techIcons[7].icon },
 ];
 
 const aboutTitle = [

@@ -21,7 +21,7 @@ const ProjectCard = ({ value }) => {
             className=" max-h-[145px] w-full object-cover "
           />
           <span className="absolute top-5 right-5 rounded-[7px] text-slate_900 bg-indigo_300 inline-block p-2 text-2xl">
-            {techIcons[0].icon}
+            {value.mainTect}
           </span>
         </figure>
         <div>
