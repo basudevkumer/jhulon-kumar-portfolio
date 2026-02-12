@@ -1,12 +1,13 @@
 import allIcon from "@/helper/IconProvider";
 import { allProjects, allTechIcons } from "@/helper/projectNecessaryArr-obj";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import ProjectCard from "../projectCard/ProjectCard";
 import { useVirtualizer } from "@tanstack/react-virtual";
 
 const ProjectMain = () => {
   // state manage
   const [techArr, setTechArr] = useState([]);
+
   const [isOpen, setIsopen] = useState(false);
 
   const handleOpen = () => {
@@ -25,15 +26,29 @@ const ProjectMain = () => {
     });
   };
 
+  const filteredProjects = React.useMemo(() => {
+    if (techArr.length === 0) {
+      return allProjects;
+    }
+
+    return allProjects.filter((project) =>
+      techArr.some((selectedTech) =>
+        project.technologies.some(
+          (tech) => tech.toLowerCase() === selectedTech.toLowerCase(),
+        ),
+      ),
+    );
+  }, [techArr]);
+
   // The scrollable element for your list
   const parentRef = React.useRef(null);
   const smallResponsiveRef = React.useRef(null);
   const mdResponsiveRef = React.useRef(null);
 
   const columnCount = 3;
-  const rowCount = Math.ceil(allProjects.length / columnCount);
+  const rowCount = Math.ceil(filteredProjects.length / columnCount);
   const mdColumnCount = 2;
-  const mdRowCount = Math.ceil(allProjects.length / mdColumnCount);
+  const mdRowCount = Math.ceil(filteredProjects.length / mdColumnCount);
 
   // The virtualizer
   const rowVirtualizer = useVirtualizer({
@@ -42,7 +57,7 @@ const ProjectMain = () => {
     estimateSize: () => 400,
   });
   const smRowVirtualizer = useVirtualizer({
-    count: allProjects.length || 0,
+    count: filteredProjects.length || 0,
     getScrollElement: () => smallResponsiveRef.current,
     estimateSize: () => 400,
   });
@@ -112,7 +127,7 @@ const ProjectMain = () => {
                     {rowVirtualizer.getVirtualItems().map((virtualItem) => {
                       const startIndex = virtualItem.index * 3;
 
-                      const startRow = allProjects.slice(
+                      const startRow = filteredProjects.slice(
                         startIndex,
                         startIndex + 3,
                       );
@@ -140,8 +155,8 @@ const ProjectMain = () => {
                 </div>
               </div>
               <div className=" grid grid-cols-2">
-                <div>1</div>
-                <div className=" border-l border-slate_700 "> 2</div>
+                <div></div>
+                <div className=" border-l border-slate_700 "> </div>
               </div>
             </div>
           </div>
@@ -208,7 +223,8 @@ const ProjectMain = () => {
               {/* Only the visible items in the virtualizer, manually positioned to be in view */}
               {smRowVirtualizer.getVirtualItems().map((virtualItem) => {
                 const startIndex = virtualItem.index * 1;
-                 const startRow = allProjects.slice(startIndex, startIndex + 1);
+                const startRow = filteredProjects.slice(startIndex, startIndex + 1);
+
                 return (
                   <div
                     key={virtualItem.key}
@@ -221,11 +237,9 @@ const ProjectMain = () => {
                       transform: `translateY(${virtualItem.start}px)`,
                     }}
                   >
-                   {
-                    startRow.map((items,index)=>{
-                      return  <ProjectCard key={index} value={items} />
-                    })
-                   }
+                    {startRow.map((items, index) => {
+                      return <ProjectCard key={index} value={items} />;
+                    })}
                   </div>
                 );
               })}
@@ -268,8 +282,6 @@ const ProjectMain = () => {
                     className="grid grid-cols-2 gap-x-5"
                   >
                     {startRow.map((items) => {
-                      
-
                       return <ProjectCard key={items.id} value={items} />;
                     })}
                   </div>

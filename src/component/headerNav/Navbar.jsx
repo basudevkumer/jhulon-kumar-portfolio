@@ -9,7 +9,7 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [height, setHeight] = useState(0);
 
-  console.log(height);
+
 
   const [activeId, setActiveId] = useState(2);
 
