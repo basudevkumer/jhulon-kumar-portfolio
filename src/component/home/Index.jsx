@@ -1,6 +1,8 @@
 import React from "react";
 import Container from "../commonComponent/Container";
 import allImages from "@/helper/ImageProvider";
+import SnakeGame from "../commonComponent/SnakeGame";
+
 
 const Hello = () => {
   const { hello_pages_Image } = allImages;
@@ -44,13 +46,7 @@ const Hello = () => {
             </div>
           </div>
           <div className=" relative  ">
-            <figure className="relative hidden lg:block">
-              <img
-                src={hello_pages_Image}
-                alt="hello_bannar_Image"
-                className="!z-20 relative  h-[px]"
-              />
-            </figure>
+            <SnakeGame/>
 
             <div className="bg-teal_400 w-[150px] h-[150px] top-[-290px] left-10  lg:w-[400px] lg:h-[400px]  md:w-[350px] md:h-[350px]   blur-[174px] opacity-50 md:opacity-40  absolute sm:w-[250px] sm:h-[250px]  sm:top-[-330px] sm:left-[20px] md:top-[-400px] md:left-[0px] lg:top-[-30px] lg:left-[-140px]   z-10 sm:block"></div>
             <div className="bg-indigo_500 w-[150px] h-[150px] top-[-170px] left-[70px] lg:w-[400px] lg:h-[400px]   md:w-[350px] md:h-[350px]  blur-[174px] opacity-75  md:opacity-40 absolute  sm:w-[250px] sm:h-[250px]    absolute sm:top-[-130px]    sm:left-[210px] md:top-[-150px] md:left-[250px] lg:top-[120px] lg:left-[180px]  z-10 "></div>
