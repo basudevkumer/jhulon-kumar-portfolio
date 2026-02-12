@@ -226,9 +226,10 @@ const allProjects = [
   {
     id: 1,
     title: "Project 1 ",
-    subtitle: "// cilcon ecommerce-site",
+    subtitle: "// Cilcon E-Commerce Platform",
     image: projectImages[0].image,
-    description: "this a e-commerce site....",
+    description:
+      "A modern e-commerce web application with smooth UI interactions.\nFocused on performance, state management, and reusable components.",
     technologies: [
       "React",
       "CSS",
@@ -247,9 +248,10 @@ const allProjects = [
   {
     id: 2,
     title: "Project 2 ",
-    subtitle: "// innovate-1 {animated site}",
+    subtitle: "// Innovate Landing Page – Version 1 (Animated)",
     image: projectImages[1].image,
-    description: "innovate-1 animate site...",
+    description:
+      "An animated landing page showcasing creative UI transitions.\nBuilt to explore motion effects and interactive design patterns.",
     technologies: [
       "HTML",
       "CSS",
@@ -265,9 +267,10 @@ const allProjects = [
   {
     id: 3,
     title: "Project 3 ",
-    subtitle: "// innovate-2 {animated site}",
+    subtitle: "// Innovate Landing Page – Version 2 (Animated)",
     image: projectImages[2].image,
-    description: "innovate-2 animate site...",
+    description:
+      "A visually engaging animated website with dynamic elements.\nEmphasizes smooth transitions and responsive layouts.",
     technologies: [
       "HTML",
       "CSS",
@@ -283,18 +286,20 @@ const allProjects = [
   {
     id: 4,
     title: "Project 4 ",
-    subtitle: "// blockchain landing site...",
+    subtitle: "// Blockchain Product Landing Page",
     image: projectImages[9].image,
-    description: "blockchain landing site...",
+    description:
+      "A clean and modern blockchain-themed landing page design.\nCreated to practice layout composition and Tailwind styling.",
     technologies: ["HTML", "CSS", "tailwind", "tailwind-cli"],
     to: "https://blockchain-xi-henna.vercel.app/",
   },
   {
     id: 5,
     title: "Project 5 ",
-    subtitle: "// innovate-4 landing page",
+    subtitle: "// Innovate Landing Page – Version 4",
     image: projectImages[4].image,
-    description: "innvate-4 landing page...",
+    description:
+      "A responsive landing page with engaging UI components.\nFocused on reusable sections and user-friendly structure.",
     technologies: [
       "HTML",
       "CSS",
@@ -309,9 +314,10 @@ const allProjects = [
   {
     id: 6,
     title: "Project 6 ",
-    subtitle: "// foodi landing page",
+    subtitle: "// Foodi Product Landing Experience",
     image: projectImages[5].image,
-    description: "foodi landing page...",
+    description:
+      "A food-themed landing page highlighting visual appeal.\nDesigned to experiment with sliders and modern UI spacing.",
     technologies: [
       "HTML",
       "CSS",
@@ -326,9 +332,10 @@ const allProjects = [
   {
     id: 7,
     title: "Project 7 ",
-    subtitle: "// finsweet full site...",
+    subtitle: "// Finsweet-Inspired Multi-Page Website",
     image: projectImages[6].image,
-    description: "finsweet full site...",
+    description:
+      "A multi-section website inspired by real-world layouts.\nBuilt to improve component structuring and UI consistency.",
     technologies: [
       "HTML",
       "CSS",
@@ -345,27 +352,30 @@ const allProjects = [
   {
     id: 8,
     title: "Project 8 ",
-    subtitle: "// freshWebsite landing site...",
+    subtitle: "// FreshWebsite Minimal Landing Page",
     image: projectImages[7].image,
-    description: "freshWebsite landing site...",
+    description:
+      "A simple yet elegant landing page design concept.\nFocused on clean layout and basic styling techniques.",
     technologies: ["HTML", "CSS"],
     to: "https://basudevkumer.github.io/freshWebsite/",
   },
   {
     id: 9,
     title: "Project 9 ",
-    subtitle: "// dzzling demo site...",
+    subtitle: "// Dazzling UI Demo Website",
     image: projectImages[8].image,
-    description: "Dazzling Demo site...",
+    description:
+      "A demo website built for layout and styling practice.\nExplores Bootstrap components and responsive behavior.",
     technologies: ["HTML", "CSS", "bootstrap"],
     to: "https://basudevkumer.github.io/Boot_Project_1/",
   },
   {
     id: 10,
     title: "Project 10 ",
-    subtitle: "// innovate-3 landing page",
+    subtitle: "// Innovate Landing Page – Version 3",
     image: projectImages[3].image,
-    description: "innovate-3 langing page...",
+    description:
+      "A modern landing page featuring interactive UI elements.\nDesigned to test design systems and component reuse.",
     technologies: [
       "HTML",
       "CSS",
@@ -380,9 +390,10 @@ const allProjects = [
   {
     id: 11,
     title: "Project 11 ",
-    subtitle: "// innovate-5 landing page",
+    subtitle: "// Innovate Landing Page – Version 5",
     image: projectImages[10].image,
-    description: "innovate-5 langing page...",
+    description:
+      "A lightweight landing page project with structured layout.\nBuilt to refine styling and responsive alignment skills.",
     technologies: [
       "HTML",
       "CSS",
@@ -396,9 +407,10 @@ const allProjects = [
   {
     id: 12,
     title: "Project 12 ",
-    subtitle: "// innovate-6 landing page",
+    subtitle: "// Innovate Landing Page – Version 6",
     image: projectImages[11].image,
-    description: "innovate-6 langing page...",
+    description:
+      "A modern UI-focused landing page with motion effects.\nHighlights component-based design and visual hierarchy.",
     technologies: [
       "HTML",
       "CSS",
@@ -414,18 +426,20 @@ const allProjects = [
   {
     id: 13,
     title: "Project 13 ",
-    subtitle: "// innovate-7 landing page",
+    subtitle: "// Innovate Landing Page – Version 7",
     image: projectImages[12].image,
-    description: "innovate-7 langing page...",
+    description:
+      "A clean Bootstrap-based landing page layout experiment.\nFocused on grid usage and visual balance.",
     technologies: ["HTML", "CSS", "bootstrap"],
     to: "https://innovate7.vercel.app/",
   },
   {
     id: 14,
     title: "Project 14 ",
-    subtitle: "// innovate-8 landing page",
+    subtitle: "// Innovate Landing Page – Version 8",
     image: projectImages[13].image,
-    description: "innovate-8 langing page...",
+    description:
+      "A polished landing page with responsive UI sections.\nBuilt to practice layout refinement and spacing control.",
     technologies: [
       "HTML",
       "CSS",
@@ -439,9 +453,10 @@ const allProjects = [
   {
     id: 15,
     title: "Project 15 ",
-    subtitle: "// innovate-9 landing page",
+    subtitle: "// Innovate Landing Page – Version 9",
     image: projectImages[14].image,
-    description: "innovate-9 langing page...",
+    description:
+      "A modern landing page exploring reusable UI patterns.\nDesigned for improving component-driven development.",
     technologies: [
       "HTML",
       "CSS",
@@ -455,27 +470,30 @@ const allProjects = [
   {
     id: 16,
     title: "Project 16 ",
-    subtitle: "// simple carocell project",
+    subtitle: "// Interactive Carousel UI Component",
     image: projectImages[15].image,
-    description: "imple carocell project",
+    description:
+      "A simple carousel-based UI interaction project.\nCreated to understand animations and sliding behavior.",
     technologies: ["HTML", "CSS", "tailwind", "JavaScript"],
     to: "https://caurosel.vercel.app/",
   },
   {
     id: 17,
     title: "Project 17 ",
-    subtitle: "// simple quiz project",
+    subtitle: "// Dynamic Quiz Application",
     image: projectImages[16].image,
-    description: "simple quiz project",
+    description:
+      "A basic quiz application with dynamic question flow.\nFocused on logic handling and DOM interactions.",
     technologies: ["HTML", "CSS", "tailwind", "JavaScript"],
     to: "https://simple-quiz-app-qo7i.vercel.app/",
   },
   {
     id: 18,
     title: "Project 18 ",
-    subtitle: "// toaster",
+    subtitle: "// Toast Notification UI System",
     image: projectImages[17].image,
-    description: "toaster",
+    description:
+      "A toast notification UI experiment for user feedback.\nBuilt to practice event-driven interactions and timing.",
     technologies: ["HTML", "CSS", "bootstrap", "JavaScript"],
     to: "https://basudevkumer.github.io/Toast-js/",
   },
