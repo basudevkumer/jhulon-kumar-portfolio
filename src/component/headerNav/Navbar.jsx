@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import Container from "@/component/commonComponent/Container";
 import { navbarArray } from "@/helper/projectNecessaryArr-obj";
 import allIcon from "@/helper/IconProvider";
 import { Link } from "react-router-dom";

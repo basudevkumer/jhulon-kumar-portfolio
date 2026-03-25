@@ -3,7 +3,6 @@ import Container from "../commonComponent/Container";
 import allImages from "@/helper/ImageProvider";
 import SnakeGame from "../commonComponent/SnakeGame";
 
-
 const Hello = () => {
   const { hello_pages_Image } = allImages;
 
@@ -14,7 +13,9 @@ const Hello = () => {
           <div className="md:pl-[100px] sm:pl-[40px]">
             <div className=" pb-12 sm:pb-[75px] ">
               <h6 className="body_thin_lg text-slate_400">Hi all. I am</h6>
-              <h1 className=" heading1xs sm:heading1 text-slate_50 pt-4 pb-2">Jhulon Kumar</h1>
+              <h1 className=" heading1xs sm:heading1 text-slate_50 pt-4 pb-2">
+                Jhulon Kumar
+              </h1>
               <h4 className="text-indigo_500 heading4xs sm:heading4">
                 {" "}
                 &gt; Front-end developer
@@ -34,7 +35,7 @@ const Hello = () => {
                   githubLink{" "}
                 </span>
                 <span className="body_thin_md text-slate_50 ">=</span>
-                
+
                 <a
                   href="https://github.com/basudevkumer"
                   className="body_thin_md text-rose_300 break-words max-w-full"
@@ -45,8 +46,8 @@ const Hello = () => {
               </div>
             </div>
           </div>
-          <div className=" relative  ">
-            <SnakeGame/>
+          <div className=" relative  lg:block hidden ">
+            <SnakeGame />
 
             <div className="bg-teal_400 w-[150px] h-[150px] top-[-290px] left-10  lg:w-[400px] lg:h-[400px]  md:w-[350px] md:h-[350px]   blur-[174px] opacity-50 md:opacity-40  absolute sm:w-[250px] sm:h-[250px]  sm:top-[-330px] sm:left-[20px] md:top-[-400px] md:left-[0px] lg:top-[-30px] lg:left-[-140px]   z-10 sm:block"></div>
             <div className="bg-indigo_500 w-[150px] h-[150px] top-[-170px] left-[70px] lg:w-[400px] lg:h-[400px]   md:w-[350px] md:h-[350px]  blur-[174px] opacity-75  md:opacity-40 absolute  sm:w-[250px] sm:h-[250px]    absolute sm:top-[-130px]    sm:left-[210px] md:top-[-150px] md:left-[250px] lg:top-[120px] lg:left-[180px]  z-10 "></div>
