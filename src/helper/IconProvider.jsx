@@ -26,7 +26,7 @@ import { FaJsSquare } from "react-icons/fa";
 import { BiSolidRightArrow } from "react-icons/bi";
 import { SiReactbootstrap } from "react-icons/si";
 
-
+import { FaGreaterThan } from "react-icons/fa6";
 
 const allIcon = {
   footerIcon: [
@@ -44,7 +44,7 @@ const allIcon = {
     { id: 3, icon: <RiGamepadFill />, to: "" },
   ],
   down: <FaSortDown />,
-  rightArrow: <BiSolidRightArrow/> ,
+  rightArrow: <BiSolidRightArrow />,
   rightChev: <FaChevronRight />,
   downChev: <FaChevronDown />,
   folder: <RiFolder3Fill />,
@@ -63,8 +63,8 @@ const allIcon = {
     { id: 6, icon: <SiNextdotjs /> },
     { id: 7, icon: <SiTypescript /> },
     { id: 8, icon: <SiReactbootstrap /> },
-    
   ],
+  greatherThen: <FaGreaterThan />,
 };
 
 export default allIcon;

@@ -2,9 +2,11 @@ import React from "react";
 import Container from "../commonComponent/Container";
 import allImages from "@/helper/ImageProvider";
 import SnakeGame from "../commonComponent/SnakeGame";
+import TypeWritter from "../commonComponent/TypeWritter";
+import allIcon from "@/helper/IconProvider";
 
 const Hello = () => {
-  const { hello_pages_Image } = allImages;
+  const { greatherThen } = allIcon;
 
   return (
     <section className=" h-full w-full border  border-b-0 lg:border border-slate_700   bg-slate_900   ">
@@ -16,10 +18,13 @@ const Hello = () => {
               <h1 className=" heading1xs sm:heading1 text-slate_50 pt-4 pb-2">
                 Jhulon Kumar
               </h1>
-              <h4 className="text-indigo_500 heading4xs sm:heading4">
-                {" "}
-                &gt; Front-end developer
-              </h4>
+
+              <div className="flex gap-x-3 items-center mt-1">
+                <span className="text-indigo_500 heading4xs sm:heading4">
+                  {greatherThen}
+                </span>
+                <TypeWritter />
+              </div>
             </div>
             <div className="flex flex-col gap-2-5">
               <p className="body_thin_md text-slate_400 hidden lg:block ">
