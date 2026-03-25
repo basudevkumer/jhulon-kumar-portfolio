@@ -8,8 +8,6 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [height, setHeight] = useState(0);
 
-
-
   const [activeId, setActiveId] = useState(2);
 
   const handleClicked = () => {
@@ -47,9 +45,8 @@ const Navbar = () => {
               const isActive = activeId === item.id;
 
               return item.isLast ? null : (
-                <Link to={item.to}  key={item.id} >
+                <Link to={item.to} key={item.id}>
                   <li
-                   
                     className={`
                       ${item.className}
                       border-slate_700
@@ -86,9 +83,8 @@ const Navbar = () => {
               const isActive = activeId === item.id;
 
               return item.isLast ? (
-                <Link to={item.to}   key={item.id}>
+                <Link to={item.to} key={item.id}>
                   <li
-                  
                     className={`
                         ${item.className}
                         border-slate_700
@@ -137,6 +133,10 @@ const Navbar = () => {
                     <li
                       className="py-3 px-6 text-slate_50 border border-slate_700"
                       key={index}
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        setIsOpen(false);
+                      }}
                     >
                       <Link to={items.to}> {items.name}</Link>
                     </li>

@@ -21,6 +21,7 @@ const navbarArray = [
     className: "border-r ",
     status: true,
     responsive: false,
+    to: "/",
   },
   {
     id: 2,
@@ -333,7 +334,7 @@ const allProjects = [
       "react",
     ],
     to: "https://foodi-zeta-livid.vercel.app/",
-   mainTect: techIcons[0].icon,
+    mainTect: techIcons[0].icon,
   },
   {
     id: 7,
@@ -413,7 +414,7 @@ const allProjects = [
       "JavaScript",
     ],
     to: "https://github.com/basudevkumer/innovate5",
-     mainTect: techIcons[0].icon,
+    mainTect: techIcons[0].icon,
   },
   {
     id: 12,
@@ -444,7 +445,7 @@ const allProjects = [
       "A clean Bootstrap-based landing page layout experiment.\nFocused on grid usage and visual balance.",
     technologies: ["HTML", "CSS", "bootstrap"],
     to: "https://innovate7.vercel.app/",
-     mainTect: techIcons[3].icon,
+    mainTect: techIcons[3].icon,
   },
   {
     id: 14,
@@ -462,7 +463,7 @@ const allProjects = [
       "JavaScript",
     ],
     to: "https://innovate8-seven.vercel.app/",
-     mainTect: techIcons[0].icon,
+    mainTect: techIcons[0].icon,
   },
   {
     id: 15,
@@ -480,7 +481,7 @@ const allProjects = [
       "JavaScript",
     ],
     to: "https://innovate9.vercel.app/",
-     mainTect: techIcons[0].icon,
+    mainTect: techIcons[0].icon,
   },
   {
     id: 16,
@@ -491,7 +492,7 @@ const allProjects = [
       "A simple carousel-based UI interaction project.\nCreated to understand animations and sliding behavior.",
     technologies: ["HTML", "CSS", "tailwind", "JavaScript"],
     to: "https://caurosel.vercel.app/",
-     mainTect: techIcons[4].icon,
+    mainTect: techIcons[4].icon,
   },
   {
     id: 17,
@@ -513,7 +514,7 @@ const allProjects = [
       "A toast notification UI experiment for user feedback.\nBuilt to practice event-driven interactions and timing.",
     technologies: ["HTML", "CSS", "bootstrap", "JavaScript"],
     to: "https://basudevkumer.github.io/Toast-js/",
-     mainTect: techIcons[4].icon,
+    mainTect: techIcons[4].icon,
   },
 ];
 
