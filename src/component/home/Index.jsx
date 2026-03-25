@@ -22,7 +22,7 @@ const Hello = () => {
               </h4>
             </div>
             <div className="flex flex-col gap-2-5">
-              <p className="body_thin_md text-slate_400  md:hidden sm:hidden lg:block ">
+              <p className="body_thin_md text-slate_400 hidden lg:block ">
                 // complete the game to continue
               </p>
               <p className="body_thin_md text-slate_400">
