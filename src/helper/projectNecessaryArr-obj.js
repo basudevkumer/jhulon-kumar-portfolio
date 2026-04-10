@@ -326,7 +326,7 @@ const allProjects = [
       "unpic",
     ],
     to: "https://uomo-ui.vercel.app/",
-    mainTect: techIcons[1].icon,
+    mainTect: techIcons[0].icon,
   },
   {
     id: 3,
@@ -350,7 +350,7 @@ const allProjects = [
       "vite",
     ],
     to: "https://bazar-dor-live.vercel.app/",
-    mainTect: techIcons[4].icon,
+    mainTect: techIcons[0].icon,
   },
   {
     id: 4,
@@ -372,7 +372,7 @@ const allProjects = [
       "A modern and responsive Digital Marketing landing page built with Tailwind CSS & Flowbite.\nFocused on clean layout, user-friendly design and team collaboration via GitHub.",
     technologies: ["HTML", "CSS", "JavaScript", "Tailwind", "flowbite"],
     to: "https://digital-marketing-ui-nine.vercel.app/",
-    mainTect: techIcons[3].icon,
+    mainTect: techIcons[2].icon,
   },
   {
     id: 6,
@@ -652,7 +652,7 @@ const allProjects = [
       "A fun two-player number guessing game built with vanilla JavaScript.\nPlayer One sets a secret number, Player Two has 5 chances to guess it — with live feedback and win/lose detection.",
     technologies: ["HTML", "CSS", "JavaScript"],
     to: "https://js-game-one-nu.vercel.app/",
-    mainTect: techIcons[5].icon,
+    mainTect: techIcons[4].icon,
   },
 ];
 
