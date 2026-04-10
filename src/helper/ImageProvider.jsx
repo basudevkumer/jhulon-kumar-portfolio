@@ -22,6 +22,12 @@ import Project15 from "@/assets/images/project-15.png";
 import Project16 from "@/assets/images/project-16.png";
 import Project17 from "@/assets/images/project-17.png";
 import Project18 from "@/assets/images/project-18.png";
+import Project19 from "@/assets/images/uomo-ui.png";
+import Project20 from "@/assets/images/bazar-dor.png";
+import Project21 from "@/assets/images/digital-bn.png";
+import Project22 from "@/assets/images/digital-en.png";
+import Project23 from "@/assets/images/player-one.png";
+
 
 const allImages = {
   hello_pages_Image: HelloImg,
@@ -49,6 +55,12 @@ const allImages = {
     { id: 16, image: Project16 },
     { id: 17, image: Project17 },
     { id: 18, image: Project18 },
+    { id: 19, image: Project19 },
+    { id: 20, image: Project20 },
+    { id: 21, image: Project21 },
+    { id: 22, image: Project22 },
+    { id: 23, image: Project23 },
+
   ],
 };
 

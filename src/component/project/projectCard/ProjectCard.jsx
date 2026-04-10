@@ -18,7 +18,7 @@ const ProjectCard = ({ value }) => {
           <img
             src={value?.image}
             alt="project images"
-            className=" max-h-[145px] w-full object-cover "
+            className=" max-h-[145px] lg:min-h-[145px] w-full object-cover "
           />
           <span className="absolute top-5 right-5 rounded-[7px] text-slate_900 bg-indigo_300 inline-block p-2 text-2xl">
             {value.mainTect}
