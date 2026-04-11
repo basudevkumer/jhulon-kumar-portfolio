@@ -425,30 +425,11 @@ const allProjects = [
     to: "https://blockchain-xi-henna.vercel.app/",
     mainTect: techIcons[2].icon,
   },
-  {
+   {
     id: 9,
     title: "Project 9",
-    subtitle: "// Innovate Landing Page – Version 4",
-    image: projectImages[4].image,
-    description:
-      "A responsive landing page with engaging UI components.\nFocused on reusable sections and user-friendly structure.",
-    technologies: [
-      "HTML",
-      "CSS",
-      "JavaScript",
-      "react",
-      "react-slick",
-      "tailwindcss",
-      "react-router",
-    ],
-    to: "https://innovate5.vercel.app/",
-    mainTect: techIcons[0].icon,
-  },
-  {
-    id: 10,
-    title: "Project 10",
     subtitle: "// Foodi Product Landing Experience",
-    image: projectImages[5].image,
+    image: projectImages[4].image,
     description:
       "A food-themed landing page highlighting visual appeal.\nDesigned to experiment with sliders and modern UI spacing.",
     technologies: [
@@ -463,6 +444,26 @@ const allProjects = [
     to: "https://foodi-zeta-livid.vercel.app/",
     mainTect: techIcons[0].icon,
   },
+  {
+    id: 10,
+    title: "Project 10",
+    subtitle: "// Innovate Landing Page – Version 4",
+    image: projectImages[10].image,
+    description:
+      "A responsive landing page with engaging UI components.\nFocused on reusable sections and user-friendly structure.",
+    technologies: [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "react",
+      "react-slick",
+      "tailwindcss",
+      "react-router",
+    ],
+    to: "https://innovate5.vercel.app/",
+    mainTect: techIcons[0].icon,
+  },
+ 
   {
     id: 11,
     title: "Project 11",
@@ -525,27 +526,27 @@ const allProjects = [
     to: "https://innvate4.vercel.app/",
     mainTect: techIcons[0].icon,
   },
+  // {
+  //   id: 15,
+  //   title: "Project 15",
+  //   subtitle: "// Innovate Landing Page – Version 5",
+  //   image: projectImages[10].image,
+  //   description:
+  //     "A lightweight landing page project with structured layout.\nBuilt to refine styling and responsive alignment skills.",
+  //   technologies: [
+  //     "HTML",
+  //     "CSS",
+  //     "react",
+  //     "react-slick",
+  //     "tailwind",
+  //     "JavaScript",
+  //   ],
+  //   to: "https://github.com/basudevkumer/innovate5",
+  //   mainTect: techIcons[0].icon,
+  // },
   {
     id: 15,
     title: "Project 15",
-    subtitle: "// Innovate Landing Page – Version 5",
-    image: projectImages[10].image,
-    description:
-      "A lightweight landing page project with structured layout.\nBuilt to refine styling and responsive alignment skills.",
-    technologies: [
-      "HTML",
-      "CSS",
-      "react",
-      "react-slick",
-      "tailwind",
-      "JavaScript",
-    ],
-    to: "https://github.com/basudevkumer/innovate5",
-    mainTect: techIcons[0].icon,
-  },
-  {
-    id: 16,
-    title: "Project 16",
     subtitle: "// Innovate Landing Page – Version 6",
     image: projectImages[11].image,
     description:
@@ -564,8 +565,8 @@ const allProjects = [
     mainTect: techIcons[0].icon,
   },
   {
-    id: 17,
-    title: "Project 17",
+    id: 16,
+    title: "Project 16",
     subtitle: "// Innovate Landing Page – Version 7",
     image: projectImages[12].image,
     description:
@@ -575,8 +576,8 @@ const allProjects = [
     mainTect: techIcons[3].icon,
   },
   {
-    id: 18,
-    title: "Project 18",
+    id: 17,
+    title: "Project 17",
     subtitle: "// Innovate Landing Page – Version 8",
     image: projectImages[13].image,
     description:
@@ -593,8 +594,8 @@ const allProjects = [
     mainTect: techIcons[0].icon,
   },
   {
-    id: 19,
-    title: "Project 19",
+    id: 18,
+    title: "Project 18",
     subtitle: "// Innovate Landing Page – Version 9",
     image: projectImages[14].image,
     description:
@@ -611,8 +612,8 @@ const allProjects = [
     mainTect: techIcons[0].icon,
   },
   {
-    id: 20,
-    title: "Project 20",
+    id: 19,
+    title: "Project 19",
     subtitle: "// Interactive Carousel UI Component",
     image: projectImages[15].image,
     description:
@@ -622,8 +623,8 @@ const allProjects = [
     mainTect: techIcons[4].icon,
   },
   {
-    id: 21,
-    title: "Project 21",
+    id: 20,
+    title: "Project 20",
     subtitle: "// Dynamic Quiz Application",
     image: projectImages[16].image,
     description:
@@ -633,8 +634,8 @@ const allProjects = [
     mainTect: techIcons[4].icon,
   },
   {
-    id: 22,
-    title: "Project 22",
+    id: 21,
+    title: "Project 21",
     subtitle: "// Toast Notification UI System",
     image: projectImages[17].image,
     description:
@@ -644,8 +645,8 @@ const allProjects = [
     mainTect: techIcons[4].icon,
   },
   {
-    id: 23,
-    title: "Project 23",
+    id: 22,
+    title: "Project 22",
     subtitle: "// Two Player Number Guessing Game",
     image: projectImages[22].image,
     description:
