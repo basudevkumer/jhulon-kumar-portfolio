@@ -27,6 +27,7 @@ import Project20 from "@/assets/images/bazar-dor.png";
 import Project21 from "@/assets/images/digital-bn.png";
 import Project22 from "@/assets/images/digital-en.png";
 import Project23 from "@/assets/images/player-one.png";
+import Project24 from "@/assets/images/project-19.png";
 
 
 const allImages = {
@@ -60,6 +61,7 @@ const allImages = {
     { id: 21, image: Project21 },
     { id: 22, image: Project22 },
     { id: 23, image: Project23 },
+    { id: 24, image: Project24 },
 
   ],
 };

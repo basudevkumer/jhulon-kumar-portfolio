@@ -425,7 +425,7 @@ const allProjects = [
     to: "https://blockchain-xi-henna.vercel.app/",
     mainTect: techIcons[2].icon,
   },
-   {
+  {
     id: 9,
     title: "Project 9",
     subtitle: "// Foodi Product Landing Experience",
@@ -463,7 +463,7 @@ const allProjects = [
     to: "https://innovate5.vercel.app/",
     mainTect: techIcons[0].icon,
   },
- 
+
   {
     id: 11,
     title: "Project 11",
@@ -654,6 +654,18 @@ const allProjects = [
     technologies: ["HTML", "CSS", "JavaScript"],
     to: "https://js-game-one-nu.vercel.app/",
     mainTect: techIcons[4].icon,
+  },
+  {
+    id: 23,
+    title: "Project 23",
+    subtitle: "// Travel & Tour Booking Website",
+    image: projectImages[23].image,
+    description:
+      "A travel and tour landing page built with Next.js and React.\nFeatures a clean, responsive design with interactive sliders for a smooth browsing experience.",
+
+    technologies: ["Next js", "React", "Tailwind CSS", "Swiper"],
+    to: "https://your-live-link.com/",
+    mainTect: techIcons[5].icon,
   },
 ];
 
