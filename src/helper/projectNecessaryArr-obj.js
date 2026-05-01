@@ -662,9 +662,8 @@ const allProjects = [
     image: projectImages[23].image,
     description:
       "A travel and tour landing page built with Next.js and React.\nFeatures a clean, responsive design with interactive sliders for a smooth browsing experience.",
-
     technologies: ["Next js", "React", "Tailwind CSS", "Swiper"],
-    to: "https://your-live-link.com/",
+    to: "https://viatours-voyage.vercel.app",
     mainTect: techIcons[5].icon,
   },
 ];
